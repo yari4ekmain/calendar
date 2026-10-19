@@ -3,7 +3,6 @@ import datetime
 import os 
 import flet as ft
 import json
-
 from ui.create_calendar import CreateCalendarStart, CreateCalendarDayToDay, CreateCalendarUser, CreateCalendarWeekday
 VERSION = '1.1.1.1'
 
@@ -13,10 +12,19 @@ PAGE = None
 
 
 
-def main(page: ft.Page):
+async def main(page: ft.Page):
     # PAGE SETTING
     page.title = "calend tool"
-
+    async def inform(x):
+        global dataStart
+        dataStart = x
+        print(dataStart)
+        if x[2]==0:
+            await page.push_route('/create_colendar_day_to_day')
+        elif x[2]==1:
+            await page.push_route('/create_colendar_weekday')  
+        else:
+            await page.push_route('/create_colendar_user')  
     routes = {
         '/create_colendar_start': lambda: CreateCalendarStart(inform),
         '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform),
@@ -60,32 +68,13 @@ def main(page: ft.Page):
             
         page.update()
     page.on_route_change = route_change
-    page.go("/create_colendar_start")
+    await page.push_route("/create_colendar_start")
 
  
     page.update()
-    def inform(x):
-        global dataStart
-        dataStart = x
-        print(dataStart)
-        if x[2]==0:
-            page.go('/create_colendar_day_to_day')
-        elif x[2]==1:
-            page.go('/create_colendar_weekday')  
-        else:
-            page.go('/create_colendar_user')  
 
 
-    # with open('data/data.json','r') as f:
-    #     data = json.load(f)
-    # if data["calend"]==[]:
-    #     none_calendar_my = ft.Text('У вас нет календарей')
-    #     mu_calendar_page = ft.SafeArea(ft.Container(content=none_calendar_my,expand=True))
-    #     PAGE = mu_calendar_page
-        
-    #     page.update()
-    # else:
-    #     None
-    
 
-ft.app(main)
+
+
+ft.run(main)

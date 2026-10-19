@@ -1,25 +1,22 @@
 import flet as ft
-from api.backend import Generator
 
- 
 
-class CreateCalendarDayToDayList(ft.Container):
-    def __init__(self,god):
+class CreateCalendarList(ft.Container):
+    def __init__(self,inform_start,generator):
+        global PATH
         super().__init__()
         self.DATARENDER = 1
-
         self.listtextmes = [
-            'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+            "", 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
             'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
-        self.generator = Generator()
-        self.calendar = self.generator._generetor(int(god))
+        self.generator = generator
+        self.calendar = self.generator._generetor(inform_start)
         self.NextButton = ft.TextButton('Next',on_click=self.render_next)
         self.ReversButton = ft.TextButton('Revers',on_click=self.render_revers)
         self.RenderListCalendar()
 
     def TESTdata(self, e):
-        print(e.control.data)
-
+        None
     def render_next(self,e):
         if self.DATARENDER>=12:
             self.DATARENDER = 1
@@ -46,22 +43,37 @@ class CreateCalendarDayToDayList(ft.Container):
         )
         dayMes = 0
         dataNed = []
+        week = self.calendar["weeks"][f'{self.DATARENDER}']
         lens = len(self.calendar[f'{self.DATARENDER}'])
+        dayMes+=week
         for day in self.calendar[f'{self.DATARENDER}']:
-            
-            if dayMes%7==0 and dayMes>0:
-                data.rows.append(ft.DataRow(cells=dataNed))
-                dataNed = []
-            x = ft.DataCell(ft.Container(ft.Text(day["day"]),on_click=self.TESTdata,data=dayMes+1,expand=True))
-            dataNed.append(x)   
-            dayMes+=1
-            if dayMes==lens:
-                while dayMes%7!=0:
-                    dayMes+=1
+            if week>0:
+                while week>0:
                     x = ft.DataCell(ft.Container(ft.Text("-"),expand=True))
                     dataNed.append(x) 
+                    print('-')
+                    week-=1
+                dayMes = week
+            if len(dataNed)==7:
                 data.rows.append(ft.DataRow(cells=dataNed))
-        
+                dataNed = []
+            color= None
+            if len(day["events"])!=0:
+                color = day["events"][-1]["event_color"]
+            x = ft.DataCell(ft.Container(ft.Text(day["day"],color=color),on_click=self.TESTdata,data=day["day"],expand=True))
+            dataNed.append(x)   
+            dayMes+=1
+            print('day:',dayMes,'neddata:', len(dataNed))
+            if int(day["day"])==lens:
+                
+                while len(dataNed)!=7:
+                    dayMes+=1
+                    print('--',dayMes%7)
+                    x = ft.DataCell(ft.Container(ft.Text("-"),expand=True))
+                    dataNed.append(x) 
+                print('----','neddata:', len(dataNed))
+                data.rows.append(ft.DataRow(cells=dataNed))
+        self.generator._seve('data/dataTEST.json')
         self.content = ft.Column([
                     ft.Text(self.listtextmes[self.DATARENDER]),
                     ft.Row([
@@ -69,6 +81,48 @@ class CreateCalendarDayToDayList(ft.Container):
                         data,
                         self.NextButton
                 ])])
-         
+    def _update(self, data):
+        self.calendar = data
+        self.RenderListCalendar()
+        self.update()
 
+class CreateEventList(ft.ExpansionPanelList):
+    def __init__(self):
+        super().__init__()
+        self.expand_icon_color=ft.Colors.AMBER
+        self.divider_color=ft.Colors.AMBER
+        self.controls=[]
+        
+    def RenderPaner(self, data):
+        self.controls.clear()
+        i=0
+        
+        if data==None:
+            self.controls.append(ft.ExpansionPanel(
+                header=ft.ListTile(title=ft.Text(f"Panel {i}")),
+                content=ft.ListTile(
+                    title=ft.Text(f"Событие 00"),
+                    subtitle=ft.Text(f"Press the icon to delete panel "),
+                    trailing=ft.IconButton(
+                        icon=ft.Icons.DELETE
+                    ),),))
+            
+            return 0 
+        for event in data["events"]:
+            i+=1
+            color=event["event_color"]
+            
+            self.controls.append(
+                    ft.ExpansionPanel(
+                bgcolor=color,
+                header=ft.ListTile(title=ft.Text(f"Panel {i}"), bgcolor=color),
+                content=ft.ListTile(
+                    bgcolor=color,
+                    title=ft.Text(f"Событие {event['event_name']}"),
+                    subtitle=ft.Text(f"Press the icon to delete panel {i}"),
+                    trailing=ft.IconButton(
+                        icon=ft.Icons.DELETE,
+                        
+                    ),),))
+        
             
