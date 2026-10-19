@@ -1,5 +1,5 @@
 import flet as ft
-
+from api.backend import average_hex_color
 
 class CreateCalendarList(ft.Container):
     def __init__(self,inform_start,generator):
@@ -16,7 +16,7 @@ class CreateCalendarList(ft.Container):
         self.RenderListCalendar()
 
     def TESTdata(self, e):
-        None
+        print(e.control.data)
     def render_next(self,e):
         if self.DATARENDER>=12:
             self.DATARENDER = 1
@@ -58,9 +58,13 @@ class CreateCalendarList(ft.Container):
                 data.rows.append(ft.DataRow(cells=dataNed))
                 dataNed = []
             color= None
-            if len(day["events"])!=0:
-                color = day["events"][-1]["event_color"]
-            x = ft.DataCell(ft.Container(ft.Text(day["day"],color=color),on_click=self.TESTdata,data=day["day"],expand=True))
+            if len(day["events"])>1:
+                color = day["events"][0]["event_color"]
+                for event in day["events"][1:]:
+                    color = average_hex_color(event["event_color"],color)
+            elif len(day["events"])==1:
+                color = day["events"][0]["event_color"]
+            x = ft.DataCell(ft.Container(ft.Text(day["day"],color=color),on_click=self.TESTdata,data=day,expand=True))
             dataNed.append(x)   
             dayMes+=1
             print('day:',dayMes,'neddata:', len(dataNed))
@@ -87,13 +91,23 @@ class CreateCalendarList(ft.Container):
         self.update()
 
 class CreateEventList(ft.ExpansionPanelList):
-    def __init__(self):
+    def __init__(self, generator, render):
         super().__init__()
+        self.render = render
+        self.generator = generator
         self.expand_icon_color=ft.Colors.AMBER
         self.divider_color=ft.Colors.AMBER
         self.controls=[]
-        
+
+    def _remuveEvent(self, e):
+        print(e.control.data)
+        event = e.control.data
+        data = self.generator._remuveEvent(event)
+        self.RenderPaner(data)
+        self.render._update(data)
+        self.update()
     def RenderPaner(self, data):
+        self.data = data
         self.controls.clear()
         i=0
         
@@ -111,7 +125,6 @@ class CreateEventList(ft.ExpansionPanelList):
         for event in data["events"]:
             i+=1
             color=event["event_color"]
-            
             self.controls.append(
                     ft.ExpansionPanel(
                 bgcolor=color,
@@ -122,7 +135,8 @@ class CreateEventList(ft.ExpansionPanelList):
                     subtitle=ft.Text(f"Press the icon to delete panel {i}"),
                     trailing=ft.IconButton(
                         icon=ft.Icons.DELETE,
-                        
+                        on_click=self._remuveEvent,
+                        data=event
                     ),),))
         
             

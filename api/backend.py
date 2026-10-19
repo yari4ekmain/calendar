@@ -86,3 +86,30 @@ class Generator():
             json.dump(self.data,f,indent=2)
         return self.data
 
+VALUECONTRAST = 50
+def average_hex_color(hex1: str, hex2: str) -> str:
+    """
+    Возвращает средний HEX-цвет по двум входным HEX-кодам.
+    Поддерживает форматы: '#RRGGBB' или 'RRGGBB'.
+    """
+    def hex_to_rgb(hex_code: str):
+        hex_code = hex_code.lstrip('#')
+        r = int(hex_code[0:2], 16)
+        g = int(hex_code[2:4], 16)
+        b = int(hex_code[4:6], 16)
+        return r, g, b
+
+    def rgb_to_hex(r: int, g: int, b: int) -> str:
+        r = max(0, min(255, round(r)+VALUECONTRAST))
+        g = max(0, min(255, round(g)+VALUECONTRAST))
+        b = max(0, min(255, round(b)+VALUECONTRAST))
+        return f"#{r:02X}{g:02X}{b:02X}"
+
+    r1, g1, b1 = hex_to_rgb(hex1)
+    r2, g2, b2 = hex_to_rgb(hex2)
+
+    avg_r = (r1 + r2 + VALUECONTRAST) / 2
+    avg_g = (g1 + g2) / 2
+    avg_b = (b1 + b2) / 2
+
+    return rgb_to_hex(avg_r, avg_g, avg_b)

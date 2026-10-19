@@ -120,7 +120,7 @@ class CreateCalendarDayToDay(ft.Container):
         self.AddEventButton = ft.TextButton(content="Добавить событие", on_click=lambda e: self.page.show_dialog(self.sheet))
 
         self.CreateCalendarList = CreateCalendarList(self.inform_start,self.generator)
-        self.panel_list = CreateEventList()    
+        self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
 
         self.column = ft.Column([
             self.AddEventButton,
@@ -136,7 +136,8 @@ class CreateCalendarDayToDay(ft.Container):
                             int(event_data[2].controls[1].value), int(event_data[2].controls[2].value), event_data[3].color])
 
     def _addEvent(self, event_data):
-        data = self.generator._addEvents(event_data[1],event_data[2],event_data[3],{"event_name":event_data,"event_color":event_data[-1]})
+        event = {"event_name":event_data,"event_color":event_data[-1]}
+        data = self.generator._addEvents(event_data[1],event_data[2],event_data[3],event)
         self.panel_list.RenderPaner(data)
         self.panel_list.update()
         self.update()

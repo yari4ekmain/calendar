@@ -18,30 +18,103 @@
   "events": [
     {
       "event_name": [
-        "hhh",
-        1,
-        6,
-        6,
-        "#fff44336"
+        "3",
+        3,
+        3,
+        0,
+        "#ff2196f3"
       ],
-      "event_color": "#fff44336"
+      "event_color": "#ff2196f3"
+    },
+    {
+      "event_name": [
+        "3",
+        3,
+        3,
+        0,
+        "#ffe91e63"
+      ],
+      "event_color": "#ffe91e63"
     }
   ],
   "1": [
     {
       "day": 1,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 4,
@@ -64,25 +137,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 8,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
@@ -102,7 +227,28 @@
     {
       "day": 13,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
@@ -110,20 +256,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 15,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 16,
@@ -143,12 +320,54 @@
     {
       "day": 19,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
@@ -156,13 +375,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -184,33 +413,85 @@
     {
       "day": 25,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 28,
       "mes": 1,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 29,
@@ -225,19 +506,82 @@
     {
       "day": 31,
       "mes": 1,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     }
   ],
   "2": [
     {
       "day": 1,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
@@ -247,18 +591,7 @@
     {
       "day": 4,
       "mes": 2,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 5,
@@ -268,17 +601,80 @@
     {
       "day": 6,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 8,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
@@ -293,33 +689,85 @@
     {
       "day": 11,
       "mes": 2,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 12,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 13,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 15,
@@ -342,25 +790,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 19,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
@@ -380,7 +880,28 @@
     {
       "day": 24,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
@@ -388,20 +909,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 26,
       "mes": 2,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
@@ -423,12 +975,54 @@
     {
       "day": 1,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
@@ -436,13 +1030,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -464,33 +1068,85 @@
     {
       "day": 7,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 8,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
       "mes": 3,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 11,
@@ -505,17 +1161,80 @@
     {
       "day": 13,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 15,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 16,
@@ -525,18 +1244,7 @@
     {
       "day": 17,
       "mes": 3,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 18,
@@ -546,17 +1254,80 @@
     {
       "day": 19,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 22,
@@ -571,33 +1342,85 @@
     {
       "day": 24,
       "mes": 3,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 25,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
       "mes": 3,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 28,
@@ -620,13 +1443,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     }
@@ -635,12 +1468,54 @@
     {
       "day": 1,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
@@ -660,7 +1535,28 @@
     {
       "day": 6,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
@@ -668,20 +1564,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 8,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
@@ -701,12 +1628,54 @@
     {
       "day": 12,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 13,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
@@ -714,13 +1683,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -742,33 +1721,85 @@
     {
       "day": 18,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 19,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
       "mes": 4,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 22,
@@ -783,17 +1814,80 @@
     {
       "day": 24,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
@@ -803,18 +1897,7 @@
     {
       "day": 28,
       "mes": 4,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 29,
@@ -824,19 +1907,82 @@
     {
       "day": 30,
       "mes": 4,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     }
   ],
   "5": [
     {
       "day": 1,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
@@ -851,33 +1997,85 @@
     {
       "day": 5,
       "mes": 5,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 6,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 8,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
@@ -900,25 +2098,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 13,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 15,
@@ -938,7 +2188,28 @@
     {
       "day": 18,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 19,
@@ -946,20 +2217,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 20,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
@@ -979,12 +2281,54 @@
     {
       "day": 24,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
@@ -992,13 +2336,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -1020,35 +2374,87 @@
     {
       "day": 30,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 31,
       "mes": 5,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     }
   ],
   "6": [
     {
       "day": 1,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
       "mes": 6,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 3,
@@ -1063,17 +2469,80 @@
     {
       "day": 5,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 6,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 8,
@@ -1083,18 +2552,7 @@
     {
       "day": 9,
       "mes": 6,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 10,
@@ -1104,17 +2562,80 @@
     {
       "day": 11,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 12,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 13,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
@@ -1129,33 +2650,85 @@
     {
       "day": 16,
       "mes": 6,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 17,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 18,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 19,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
@@ -1178,25 +2751,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 24,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
@@ -1216,7 +2841,28 @@
     {
       "day": 29,
       "mes": 6,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 30,
@@ -1224,13 +2870,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     }
@@ -1239,7 +2895,28 @@
     {
       "day": 1,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 2,
@@ -1259,12 +2936,54 @@
     {
       "day": 5,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 6,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
@@ -1272,13 +2991,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -1300,33 +3029,85 @@
     {
       "day": 11,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 12,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 13,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 14,
       "mes": 7,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 15,
@@ -1341,17 +3122,80 @@
     {
       "day": 17,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 18,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 19,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 20,
@@ -1361,18 +3205,7 @@
     {
       "day": 21,
       "mes": 7,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 22,
@@ -1382,17 +3215,80 @@
     {
       "day": 23,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 24,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 26,
@@ -1407,33 +3303,85 @@
     {
       "day": 28,
       "mes": 7,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 29,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 30,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 31,
       "mes": 7,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     }
   ],
   "8": [
@@ -1458,25 +3406,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 5,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 6,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 7,
@@ -1496,7 +3496,28 @@
     {
       "day": 10,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 11,
@@ -1504,20 +3525,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 12,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 13,
@@ -1537,12 +3589,54 @@
     {
       "day": 16,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 17,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 18,
@@ -1550,13 +3644,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -1578,33 +3682,85 @@
     {
       "day": 22,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 23,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 24,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 25,
       "mes": 8,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 26,
@@ -1619,17 +3775,80 @@
     {
       "day": 28,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 29,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 30,
       "mes": 8,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 31,
@@ -1641,18 +3860,7 @@
     {
       "day": 1,
       "mes": 9,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 2,
@@ -1662,17 +3870,80 @@
     {
       "day": 3,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 4,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 5,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 6,
@@ -1687,33 +3958,85 @@
     {
       "day": 8,
       "mes": 9,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 9,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 11,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 12,
@@ -1736,25 +4059,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 16,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 17,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 18,
@@ -1774,7 +4149,28 @@
     {
       "day": 21,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 22,
@@ -1782,20 +4178,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 23,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 24,
@@ -1815,12 +4242,54 @@
     {
       "day": 27,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 28,
       "mes": 9,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 29,
@@ -1828,13 +4297,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -1858,33 +4337,85 @@
     {
       "day": 3,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 4,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 5,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 6,
       "mes": 10,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 7,
@@ -1899,17 +4430,80 @@
     {
       "day": 9,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 11,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 12,
@@ -1919,18 +4513,7 @@
     {
       "day": 13,
       "mes": 10,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 14,
@@ -1940,17 +4523,80 @@
     {
       "day": 15,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 16,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 17,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 18,
@@ -1965,33 +4611,85 @@
     {
       "day": 20,
       "mes": 10,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 21,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 22,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 23,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 24,
@@ -2014,25 +4712,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 28,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 29,
       "mes": 10,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 30,
@@ -2054,7 +4804,28 @@
     {
       "day": 2,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
@@ -2062,20 +4833,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 4,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 5,
@@ -2095,12 +4897,54 @@
     {
       "day": 8,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 9,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
@@ -2108,13 +4952,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -2136,33 +4990,85 @@
     {
       "day": 14,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 15,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 16,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 17,
       "mes": 11,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 18,
@@ -2177,17 +5083,80 @@
     {
       "day": 20,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 22,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 23,
@@ -2197,18 +5166,7 @@
     {
       "day": 24,
       "mes": 11,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 25,
@@ -2218,17 +5176,80 @@
     {
       "day": 26,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 28,
       "mes": 11,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 29,
@@ -2245,33 +5266,85 @@
     {
       "day": 1,
       "mes": 12,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 2,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 3,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 4,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 5,
@@ -2294,25 +5367,77 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 9,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 10,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 11,
@@ -2332,7 +5457,28 @@
     {
       "day": 14,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 15,
@@ -2340,20 +5486,51 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
     {
       "day": 16,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 17,
@@ -2373,12 +5550,54 @@
     {
       "day": 20,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 21,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 22,
@@ -2386,13 +5605,23 @@
       "events": [
         {
           "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
           ],
-          "event_color": "#fff44336"
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
         }
       ]
     },
@@ -2414,33 +5643,85 @@
     {
       "day": 26,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 27,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 28,
       "mes": 12,
-      "events": []
+      "events": [
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ff2196f3"
+          ],
+          "event_color": "#ff2196f3"
+        },
+        {
+          "event_name": [
+            "3",
+            3,
+            3,
+            0,
+            "#ffe91e63"
+          ],
+          "event_color": "#ffe91e63"
+        }
+      ]
     },
     {
       "day": 29,
       "mes": 12,
-      "events": [
-        {
-          "event_name": [
-            "hhh",
-            1,
-            6,
-            6,
-            "#fff44336"
-          ],
-          "event_color": "#fff44336"
-        }
-      ]
+      "events": []
     },
     {
       "day": 30,
