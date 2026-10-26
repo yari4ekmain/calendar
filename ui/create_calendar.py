@@ -1,5 +1,5 @@
 import flet as ft
-from ui.render_list_calendar import CreateCalendarList, CreateEventList
+from ui.render_list_calendar import CreateCalendarList, CreateEventList,CreateEvent
 from api.backend import Generator
 from flet_color_pickers import BlockPicker
 STARTDATA = []
@@ -46,7 +46,7 @@ class CreateCalendarStart(ft.Row):
             self.text = '''   Задача повторяется в конкретные дни недели.'''
         
         else:
-            self.text = '''   Свободное расписание —  конкретные даты.'''
+            self.text = '''   Свободное расписание — конкретные даты.'''
         
         self.info.value = self.text
         self.update()
@@ -72,7 +72,7 @@ class CreateCalendarDayToDay(ft.Container):
         self.generator = Generator()
         global STARTDATA
         self.inform_start = STARTDATA
-
+        self.alignment = ft.Alignment.TOP_CENTER
         self.dialog_picker =BlockPicker(
         color="#9c27b0",
         height=90,
@@ -114,7 +114,7 @@ class CreateCalendarDayToDay(ft.Container):
                             ft.TextButton(content="Сохранить", on_click=self._valid),
                         ],
                         
-                        alignment=ft.MainAxisAlignment.CENTER,
+                        alignment=ft.MainAxisAlignment.START,
                         ),],),),)
 
         self.AddEventButton = ft.TextButton(content="Добавить событие", on_click=lambda e: self.page.show_dialog(self.sheet))
@@ -125,9 +125,13 @@ class CreateCalendarDayToDay(ft.Container):
         self.column = ft.Column([
             self.AddEventButton,
             self.panel_list 
-            ])
+            ],horizontal_alignment=ft.CrossAxisAlignment.START,alignment=ft.MainAxisAlignment.START,scroll=ft.ScrollMode.AUTO)
 
-        self.content = (ft.Row([ft.Container(self.column,bgcolor="#242424",expand=True),self.CreateCalendarList]))
+        self.content = (ft.Column([
+                ft.Row([ft.Container(self.column,bgcolor="#242424",width=400,height=300),self.CreateCalendarList]),
+                ft.Row([CreateEvent()],expand=True)],
+                alignment=ft.MainAxisAlignment.SPACE_BETWEEN))
+        
     def _valid(self, e):
         event_data = self.sheet.content.content.controls
         if (event_data[1].value != '' and event_data[2].controls[0].value!='' and 
@@ -143,7 +147,6 @@ class CreateCalendarDayToDay(ft.Container):
         self.update()
         self.CreateCalendarList._update(data)
         self.CreateCalendarList.update()
-        
         self.page.pop_dialog()
         
 
