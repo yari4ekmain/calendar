@@ -167,21 +167,23 @@ class CreateEvent(ft.Container):
     def __init__(self):
         super().__init__()
         self.label_event = ft.TextField('Название',width=470)
+        self.bgcolor = "#1e1835"
+        self.expand = True
         self.color_event = BlockPicker(
                 color="#9c27b0",
                 height=160,
                 available_colors=COLORS,)
         self.type_event = ft.CupertinoSlidingSegmentedButton(
-            selected_index=0,
+            selected_index=1,
             width=470,
+            on_change=self._type_event,
             controls=[
                 ft.Text('Дней через дней'),
-                ft.Text("По дням недели"),
-                ft.Text('Одиночное')
+                ft.Text("По дням недели")
             ])
-        self.daywork_event = ft.TextField('Рабочии дни',width=150)
-        self.daychill_event = ft.TextField("Выходные",width=150)
-        self.sgvig = ft.TextField('Сдвиг',width=150)
+        self.daywork_event = ft.TextField(label='Рабочии дни',width=150)
+        self.daychill_event = ft.TextField(label="Выходные",width=150)
+        self.sgvig = ft.TextField(label='Сдвиг',width=150)
         self.timestart_event = ft.TimePicker(
             value=datetime.time(hour=7, minute=30),
             confirm_text="Сохранить",
@@ -201,30 +203,28 @@ class CreateEvent(ft.Container):
             minute_label_text="Минуты",
             )
         self.button_day = ft.Row([
-            ft.TextButton('ПН'),
+            ft.TextButton('ПН',height=self.daywork_event.height),
             ft.TextButton('ВТ'),
             ft.TextButton('СР'),
             ft.TextButton('ЧТ'),
             ft.TextButton('ПТ'),
             ft.TextButton('СБ'),
             ft.TextButton('ВС')
-        ],width=470)
+        ],width=470,height=self.daywork_event.height)
         self.button_timeend_event = ft.TextButton('Время конца',on_click=lambda : self.page.show_dialog(self.timeend_event))
         self.button_timestart_event = ft.TextButton("время начала",on_click=lambda : self.page.show_dialog(self.timestart_event))
+        self.chekbox_chillday = ft.Checkbox('Отметить выходные')
+        self.type_event_data = ft.Row([self.button_day])
         self.RenderInput()
     def RenderInput(self):
+        
         border = ft.Border(right=ft.BorderSide(1,"#ffffff"))
         self.content = ft.Row([
             ft.Container(
                 ft.Column([
                     self.label_event,
                     self.type_event,
-                    self.button_day,
-                    ft.Row([
-                        self.daywork_event,
-                        self.daychill_event,
-                        self.sgvig,                
-                            ]),
+                    self.type_event_data,
                     ]),
                     border=border,
                     padding=5
@@ -233,11 +233,24 @@ class CreateEvent(ft.Container):
                 ft.Text("Цвет"),
                 self.color_event,
                     ]),
-                    padding=10,
+                    padding=5,
                     border=border
                     ),
-            ft.Column([
+            ft.Container(ft.Column([
+                ft.Text('Время события (не обязательно)'),
                 self.button_timestart_event,
                 self.button_timeend_event,
-                    ])            
+                    ]),
+                    padding=5,
+                    border=border
+                    ),
+                       
                 ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
+    def _type_event(self, e):
+        if self.type_event.selected_index ==0:
+            self.type_event_data.controls.clear()
+            self.type_event_data.controls = [self.daywork_event,self.sgvig,self.daychill_event]
+        else:
+            self.type_event_data.controls.clear()
+            self.type_event_data.controls = [self.button_day]
+        self.update()
