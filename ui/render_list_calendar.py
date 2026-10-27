@@ -192,6 +192,8 @@ class CreateEvent(ft.Container):
             entry_mode=ft.TimePickerEntryMode.INPUT,
             hour_label_text='Часы',
             minute_label_text="Минуты",
+            data = 'start',
+            on_change=self._time_row
             )
         self.timeend_event = ft.TimePicker(
             value=datetime.time(hour=19, minute=30),
@@ -201,6 +203,8 @@ class CreateEvent(ft.Container):
             entry_mode=ft.TimePickerEntryMode.DIAL,
             hour_label_text='Часы',
             minute_label_text="Минуты",
+            data = 'end',
+            on_change=self._time_row
             )
         self.button_day = ft.Row([
             ft.TextButton('ПН',height=self.daywork_event.height),
@@ -215,6 +219,8 @@ class CreateEvent(ft.Container):
         self.button_timestart_event = ft.TextButton("время начала",on_click=lambda : self.page.show_dialog(self.timestart_event))
         self.chekbox_chillday = ft.Checkbox('Отметить выходные')
         self.type_event_data = ft.Row([self.button_day])
+        self.Button_remuvetime = ft.IconButton(icon=ft.Icons.REMOVE_CIRCLE_OUTLINE,disabled=True,icon_color="#800000",disabled_color="#313131",on_click=self._remuvetime)
+        self.texttime = ft.Row([ft.Text("  "), ft.Text("  "),self.Button_remuvetime], alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
         self.RenderInput()
     def RenderInput(self):
         
@@ -238,14 +244,16 @@ class CreateEvent(ft.Container):
                     ),
             ft.Container(ft.Column([
                 ft.Text('Время события (не обязательно)'),
-                self.button_timestart_event,
-                self.button_timeend_event,
+                ft.Row([self.button_timestart_event]),
+                self.texttime,
+                ft.Row([self.button_timeend_event]),
+                
                     ]),
                     padding=5,
                     border=border
                     ),
                        
-                ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
+                ],expand=True)
     def _type_event(self, e):
         if self.type_event.selected_index ==0:
             self.type_event_data.controls.clear()
@@ -254,3 +262,17 @@ class CreateEvent(ft.Container):
             self.type_event_data.controls.clear()
             self.type_event_data.controls = [self.button_day]
         self.update()
+    def _time_row(self, e):
+        if e.control.data=='start':
+            self.texttime.controls[0].value = f"   {e.data} "
+            self.Button_remuvetime.disabled = False
+        else:
+            self.texttime.controls[1].value = f"- {e.data}"
+            self.Button_remuvetime.disabled = False
+
+    def _remuvetime(self, e):
+        self.texttime.controls[0].value = None
+        self.texttime.controls[1].value = None
+        self.Button_remuvetime.disabled = True
+        self.update()
+    
