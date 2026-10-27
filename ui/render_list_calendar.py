@@ -22,6 +22,8 @@ COLORS = [
     "#607d8b",  # Серо-синий (Blue Grey)
 ]
 
+SIZEBUTTONDAY = 50
+
 class CreateCalendarList(ft.Container):
     def __init__(self,inform_start,generator):
         global PATH
@@ -164,10 +166,10 @@ class CreateEventList(ft.ExpansionPanelList):
                     ),),))
 
 class CreateEvent(ft.Container):
-    def __init__(self):
+    def __init__(self,addEvents):
         super().__init__()
+        self.addEvents = addEvents
         self.label_event = ft.TextField('Название',width=470)
-        self.bgcolor = "#1e1835"
         self.expand = True
         self.color_event = BlockPicker(
                 color="#9c27b0",
@@ -206,24 +208,28 @@ class CreateEvent(ft.Container):
             data = 'end',
             on_change=self._time_row
             )
+        
+        border = ft.Border.all(1,"#ffffff")
+
         self.button_day = ft.Row([
-            ft.TextButton('ПН',height=self.daywork_event.height),
-            ft.TextButton('ВТ'),
-            ft.TextButton('СР'),
-            ft.TextButton('ЧТ'),
-            ft.TextButton('ПТ'),
-            ft.TextButton('СБ'),
-            ft.TextButton('ВС')
-        ],width=470,height=self.daywork_event.height)
+            ft.Container(ft.Text('ПН',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('ВТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('СР',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('ЧТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('ПТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('СБ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            ft.Container(ft.Text('ВС',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+        ],width=470,height=self.daywork_event.height,alignment=ft.MainAxisAlignment.SPACE_AROUND)
         self.button_timeend_event = ft.TextButton('Время конца',on_click=lambda : self.page.show_dialog(self.timeend_event))
         self.button_timestart_event = ft.TextButton("время начала",on_click=lambda : self.page.show_dialog(self.timestart_event))
         self.chekbox_chillday = ft.Checkbox('Отметить выходные')
         self.type_event_data = ft.Row([self.button_day])
         self.Button_remuvetime = ft.IconButton(icon=ft.Icons.REMOVE_CIRCLE_OUTLINE,disabled=True,icon_color="#800000",disabled_color="#313131",on_click=self._remuvetime)
         self.texttime = ft.Row([ft.Text("  "), ft.Text("  "),self.Button_remuvetime], alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
+        self.apllay = ft.TextButton('Добавить событие',on_click=self._apllay)
         self.RenderInput()
+
     def RenderInput(self):
-        
         border = ft.Border(right=ft.BorderSide(1,"#ffffff"))
         self.content = ft.Row([
             ft.Container(
@@ -233,7 +239,7 @@ class CreateEvent(ft.Container):
                     self.type_event_data,
                     ]),
                     border=border,
-                    padding=5
+                    padding=5,
                     ),
             ft.Container(ft.Column([
                 ft.Text("Цвет"),
@@ -252,8 +258,14 @@ class CreateEvent(ft.Container):
                     padding=5,
                     border=border
                     ),
-                       
+            ft.Container(ft.Column([
+                self.chekbox_chillday,
+                self.apllay]),
+                    padding=5,
+                    border=border
+                    ),
                 ],expand=True)
+        
     def _type_event(self, e):
         if self.type_event.selected_index ==0:
             self.type_event_data.controls.clear()
@@ -262,6 +274,7 @@ class CreateEvent(ft.Container):
             self.type_event_data.controls.clear()
             self.type_event_data.controls = [self.button_day]
         self.update()
+
     def _time_row(self, e):
         if e.control.data=='start':
             self.texttime.controls[0].value = f"   {e.data} "
@@ -275,4 +288,59 @@ class CreateEvent(ft.Container):
         self.texttime.controls[1].value = None
         self.Button_remuvetime.disabled = True
         self.update()
-    
+
+    def _valid(self):
+        flag = True
+        if self.label_event.value =='':
+            self.label_event.border_color = "#690000"
+            flag = False
+        else: self.label_event.border_color = "#087912"
+        if self.type_event.selected_index ==0:
+            try:
+                if int(self.daychill_event.value)=='':
+                    self.daychill_event.border_color = "#690000"
+                    flag = False
+                else: self.daychill_event.border_color = "#087912"
+            except:
+                self.daychill_event.border_color = "#690000"
+                flag = False
+            try:
+                if int(self.daywork_event.value)=='':
+                    self.daywork_event.border_color = "#690000"
+                    flag = False
+                else: self.daywork_event.border_color = "#087912"
+            except:
+                self.daywork_event.border_color = "#690000"
+                flag = False
+            try:
+                if int(self.sgvig.value)=='':
+                    self.sgvig.border_color = "#690000"
+                    flag = False
+                else: self.sgvig.border_color = "#087912"
+            except:
+                self.daychill_event.border_color = "#690000"
+                flag = False
+        else:
+            for x in self.button_day.controls:
+                None
+        return flag
+
+    def _click_on(self, e):
+        e.control.bgcolor = "#082F77"
+        e.control.on_click = self._click_off
+        e.control.data = 'on'
+
+    def _click_off(self, e):
+        e.control.bgcolor = None
+        e.control.on_click = self._click_on
+        e.control.data = 'off'
+
+    def _apllay(self, e):
+        if self._valid():
+            event = {
+                "event_name":self.label_event.value,
+                "event_color":self.color_event.color,
+                "start_time":self.texttime.controls[0].value,
+                "end_time":self.texttime.controls[1].value
+                     }
+            self.addEvents(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
