@@ -1,13 +1,13 @@
 import json 
 import datetime
-
+import logging
 class Generator():
     def __init__(self):
         super().__init__()
-
-    def _get_shift(self, mes) -> int:
+        self.logger = logging.getLogger(f"{__name__}.Generator")
+    def _get_shift(self, mes, day) -> int:
         """Смещение: 0 = понедельник, 1 = вторник, ... 6 = воскресенье"""
-        return datetime.date(int(self.old), mes, 1).weekday()
+        return datetime.date(int(self.old), mes, day).weekday()
         
     def _vesocos(self):
         return (self.old%100!=0 and self.old%4==0)
@@ -19,7 +19,6 @@ class Generator():
     def _generetor(self,inform_start):
         self.inform_start = inform_start
         self.old = int(self.inform_start[1])
-        self._get_shift
         self.data = {
             "name":self.inform_start[0],
             "old":self.old,
@@ -27,11 +26,12 @@ class Generator():
             "events":[]
         }
         for mes in range(1,12 +1):
-            self.data["weeks"][f"{mes}"]=self._get_shift(mes)
+            self.data["weeks"][f"{mes}"]=self._get_shift(mes,1)
         for mes in range(1,12 +1):
             _mes_data = []
             for day in range(1,31 +1):
                 event = []
+                self.logger.info(f"_generetor: day:{day} mes:{mes}")
                 _day_data={
                     "day":day,
                     "mes":mes,
@@ -39,9 +39,10 @@ class Generator():
                      
                     }
                 if self._vesocos() and mes ==2 and day==29:
+                    None
+                elif (mes in [4,6,9,11] and day>30) or (mes==2 and day>28):
                     continue
-                if (mes in [4,6,9,11] and day>30) or (mes==2 and day>29):
-                    continue
+                _day_data["weekday"] = self._get_shift(mes,day)
                 _mes_data.append(_day_data)
             self.data[f"{mes}"]=_mes_data
         return self.data
@@ -71,8 +72,20 @@ class Generator():
     def _addEvent(self, dataevent, event):
         """dataevent = [mes, day] mes -- int, day -- int"""
         self.data[f'{dataevent[0]}'][dataevent[1]-1]["events"].append(event)
+        self._seve("")
         return self.data
 
+    def _addEventWeekday(self,dayx, event):
+        self.data["events"].append(event)
+        for mes in range(1,12 +1):
+            _mes_data = self.data[f"{mes}"]
+            for day in _mes_data:
+                self.logger.info(f"Generanor ADDEVENT WEEKDAY dayx: {dayx}, daydata: {day["weekday"]}")
+                if int(day["weekday"])==int(dayx):
+                     
+                    day["events"].append(event)
+        return self.data
+    
     def _remuveEvent(self,event):
         self.data["events"].remove(event)
         for mes in range(1,13):

@@ -2,6 +2,7 @@ import flet as ft
 from api.backend import average_hex_color
 from flet_color_pickers import BlockPicker
 import datetime
+import logging
 
 COLORS = [
     "#f44336",  # Красный
@@ -165,10 +166,13 @@ class CreateEventList(ft.ExpansionPanelList):
                         data=event
                     ),),))
 
+
 class CreateEvent(ft.Container):
-    def __init__(self,addEvents):
+    def __init__(self,addevent, addeventweekday):
         super().__init__()
-        self.addEvents = addEvents
+        self.logger = logging.getLogger(f"{__name__}.CreateEvent")
+        self.addevent = addevent
+        self.addeventweekday = addeventweekday
         self.label_event = ft.TextField('Название',width=470)
         self.expand = True
         self.color_event = BlockPicker(
@@ -227,6 +231,7 @@ class CreateEvent(ft.Container):
         self.Button_remuvetime = ft.IconButton(icon=ft.Icons.REMOVE_CIRCLE_OUTLINE,disabled=True,icon_color="#800000",disabled_color="#313131",on_click=self._remuvetime)
         self.texttime = ft.Row([ft.Text("  "), ft.Text("  "),self.Button_remuvetime], alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
         self.apllay = ft.TextButton('Добавить событие',on_click=self._apllay)
+        self.logger.info("CreateEvent: init")
         self.RenderInput()
 
     def RenderInput(self):
@@ -290,39 +295,36 @@ class CreateEvent(ft.Container):
         self.update()
 
     def _valid(self):
+        def _valid_int(data):
+            try:
+                if int(data.value) in [None,'']:
+                    data.border_color = "#690000"
+                    self.logger.warning(f"CreateEvent NOT VOLID")
+                    return True
+                data.border_color = "#087912"
+                self.logger.info(f"CreateEvent VALID {data.value}")
+                return False
+            except TypeError as e:
+                data.border_color = "#690000"
+                self.logger.warning(f"CreateEvent VOLID TUPEERROR {e}")
+                return True
+
         flag = True
         if self.label_event.value =='':
             self.label_event.border_color = "#690000"
             flag = False
         else: self.label_event.border_color = "#087912"
         if self.type_event.selected_index ==0:
-            try:
-                if int(self.daychill_event.value)=='':
-                    self.daychill_event.border_color = "#690000"
-                    flag = False
-                else: self.daychill_event.border_color = "#087912"
-            except:
-                self.daychill_event.border_color = "#690000"
-                flag = False
-            try:
-                if int(self.daywork_event.value)=='':
-                    self.daywork_event.border_color = "#690000"
-                    flag = False
-                else: self.daywork_event.border_color = "#087912"
-            except:
-                self.daywork_event.border_color = "#690000"
-                flag = False
-            try:
-                if int(self.sgvig.value)=='':
-                    self.sgvig.border_color = "#690000"
-                    flag = False
-                else: self.sgvig.border_color = "#087912"
-            except:
-                self.daychill_event.border_color = "#690000"
-                flag = False
+            if _valid_int(self.daychill_event) and _valid_int(self.daywork_event) and _valid_int(self.sgvig):
+                 flag = False
         else:
+            aktive= 0
             for x in self.button_day.controls:
-                None
+                if x.data == "on":
+                    aktive+=1
+            if aktive==0:
+                flag = False
+
         return flag
 
     def _click_on(self, e):
@@ -343,4 +345,6 @@ class CreateEvent(ft.Container):
                 "start_time":self.texttime.controls[0].value,
                 "end_time":self.texttime.controls[1].value
                      }
-            self.addEvents(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
+            if self.type_event.selected_index==0:
+                self.addevent(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
+            else: self.addeventweekday(self.button_day.controls,event)

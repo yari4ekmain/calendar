@@ -6,6 +6,39 @@ import json
 from ui.create_calendar import CreateCalendarStart, CreateCalendarDayToDay, CreateCalendarUser, CreateCalendarWeekday
 VERSION = '1.1.1.1'
 
+LOGGING_CONFIG = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "detailed": {
+            # Ключевые поля для понимания "откуда упало":
+            "format": "[%(asctime)s] %(levelname)s "
+                      "| %(name)s "          # полное имя логгера (модуль.Класс)
+                      "| %(module)s:%(funcName)s:%(lineno)d "  # файл, функция, строка
+                      "| %(message)s"
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "detailed",
+            "level": "INFO",
+        },
+        "file": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": "app.log",
+            "maxBytes": 10_000_000,
+            "backupCount": 5,
+            "formatter": "detailed",
+            "level": "DEBUG",  # в файл можно писать всё, в консоль — только важное
+        },
+    },
+    "root": {
+        "level": "DEBUG",        
+        "handlers": ["console", "file"],
+    },}
+
+import logging.config
 
 
 async def main(page: ft.Page):
@@ -13,18 +46,13 @@ async def main(page: ft.Page):
     async def close_app(e):
         await page.window.close()
     page.title = "calend tool"
-
+    logging.config.dictConfig(LOGGING_CONFIG)
     
     async def inform(x):
         global dataStart
         dataStart = x
-        print(dataStart)
-        if x[2]==0:
-            await page.push_route('/create_colendar_day_to_day')
-        elif x[2]==1:
-            await page.push_route('/create_colendar_weekday')  
-        else:
-            await page.push_route('/create_colendar_user')  
+        await page.push_route('/create_colendar_day_to_day')
+
     routes = {
         '/create_colendar_start': lambda: CreateCalendarStart(inform),
         '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform),
