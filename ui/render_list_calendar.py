@@ -1,6 +1,7 @@
 import flet as ft
 from api.backend import average_hex_color
 from flet_color_pickers import BlockPicker
+from ui.style import CastomButton
 import datetime
 import logging
 
@@ -26,15 +27,15 @@ COLORS = [
 SIZEBUTTONDAY = 50
 
 class CreateCalendarList(ft.Container):
-    def __init__(self,inform_start,generator):
-        global PATH
+    def __init__(self,calendar):
+        
         super().__init__()
         self.DATARENDER = 1
         self.listtextmes = [
             "", 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
             'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
-        self.generator = generator
-        self.calendar = self.generator._generetor(inform_start)
+        
+        self.calendar = calendar
         self.NextButton = ft.TextButton('Next',on_click=self.render_next)
         self.ReversButton = ft.TextButton('Revers',on_click=self.render_revers)
         self.expand = True
@@ -103,7 +104,6 @@ class CreateCalendarList(ft.Container):
                     dataNed.append(x) 
                 print('----','neddata:', len(dataNed))
                 data.rows.append(ft.DataRow(cells=dataNed,expand=True))
-        self.generator._seve('data/dataTEST.json')
         
         self.content = ft.Column([
                     ft.Text(self.listtextmes[self.DATARENDER]),
@@ -213,16 +213,14 @@ class CreateEvent(ft.Container):
             on_change=self._time_row
             )
         
-        border = ft.Border.all(1,"#ffffff")
-
         self.button_day = ft.Row([
-            ft.Container(ft.Text('ПН',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('ВТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('СР',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('ЧТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('ПТ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('СБ',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
-            ft.Container(ft.Text('ВС',size=15),border=border,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,alignment=ft.Alignment.CENTER,on_click=self._click_on, data='off'),
+            CastomButton('ПН',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('ВТ',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('СР',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('ЧТ',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('ПТ',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('СБ',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
+            CastomButton('ВС',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
         ],width=470,height=self.daywork_event.height,alignment=ft.MainAxisAlignment.SPACE_AROUND)
         self.button_timeend_event = ft.TextButton('Время конца',on_click=lambda : self.page.show_dialog(self.timeend_event))
         self.button_timestart_event = ft.TextButton("время начала",on_click=lambda : self.page.show_dialog(self.timestart_event))

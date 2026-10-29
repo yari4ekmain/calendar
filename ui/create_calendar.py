@@ -33,7 +33,7 @@ class CreateCalendarStart(ft.Row):
         if (self.input_name.value!='' and self.input_god.value!=''):
             global STARTDATA
             STARTDATA=[self.input_name.value,self.input_god.value]
-            await self.inform([self.input_name.value,self.input_god.value]) 
+            await self.inform('/create_colendar_day_to_day') 
         else:
             if self.input_name.value=='':
                 x=0
@@ -46,7 +46,6 @@ class CreateCalendarStart(ft.Row):
             self.update()
 
 class CreateCalendarDayToDay(ft.Container):
-    
     def __init__(self,inform_start):
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarDayToDay")
@@ -55,7 +54,7 @@ class CreateCalendarDayToDay(ft.Container):
         self.inform_start = STARTDATA
         self.alignment = ft.Alignment.TOP_CENTER
 
-        self.CreateCalendarList = CreateCalendarList(self.inform_start,self.generator)
+        self.CreateCalendarList = CreateCalendarList(self.generator._generetor(self.inform_start))
         self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
 
         self.column = ft.Column([

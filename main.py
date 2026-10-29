@@ -1,59 +1,22 @@
-import time
-import datetime
-import os 
+
 import flet as ft
-import json
+
 from ui.create_calendar import CreateCalendarStart, CreateCalendarDayToDay, CreateCalendarUser, CreateCalendarWeekday
-VERSION = '1.1.1.1'
+from ui.home import Home
+from api.tools import Tools
 
-LOGGING_CONFIG = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "formatters": {
-        "detailed": {
-            # Ключевые поля для понимания "откуда упало":
-            "format": "[%(asctime)s] %(levelname)s "
-                      "| %(name)s "          # полное имя логгера (модуль.Класс)
-                      "| %(module)s:%(funcName)s:%(lineno)d "  # файл, функция, строка
-                      "| %(message)s"
-        }
-    },
-    "handlers": {
-        "console": {
-            "class": "logging.StreamHandler",
-            "formatter": "detailed",
-            "level": "INFO",
-        },
-        "file": {
-            "class": "logging.handlers.RotatingFileHandler",
-            "filename": "app.log",
-            "maxBytes": 10_000_000,
-            "backupCount": 5,
-            "formatter": "detailed",
-            "level": "DEBUG",  # в файл можно писать всё, в консоль — только важное
-        },
-    },
-    "root": {
-        "level": "DEBUG",        
-        "handlers": ["console", "file"],
-    },}
-
-import logging.config
 
 
 async def main(page: ft.Page):
-    # PAGE SETTING
-    async def close_app(e):
-        await page.window.close()
     page.title = "calend tool"
-    logging.config.dictConfig(LOGGING_CONFIG)
-    
-    async def inform(x):
-        global dataStart
-        dataStart = x
-        await page.push_route('/create_colendar_day_to_day')
+    Tools().StartApp()
+    import logging
+        
+    async def inform(route):
+        await page.push_route(f'{route}')
 
     routes = {
+        '/home': lambda: Home(inform),
         '/create_colendar_start': lambda: CreateCalendarStart(inform),
         '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform),
         '/create_colendar_user': lambda: CreateCalendarUser(inform),
@@ -61,34 +24,30 @@ async def main(page: ft.Page):
         '/setting': lambda: None,
         '/my_calendar': lambda: None,
     }
-    appbar = ft.AppBar(
-        leading=ft.Icon(ft.Icons.PALETTE),
-        leading_width=60,
-        actions_padding=5,
-        toolbar_height=30,
-        secondary=True,
-        bgcolor="#181152",
-        actions=[
-            ft.PopupMenuButton(
-                padding=10,
-                content='lflf',
-                key="popup",
-                items=[
-                    ft.PopupMenuItem(content="Item 1"),
-                    ft.PopupMenuItem(),  # divider
-                    ft.PopupMenuItem(
-                        content="Checked item",
-                        checked=False,
-                       
-                    ),
-                ],
+    drawer = ft.NavigationDrawer(
+        # on_dismiss=handle_dismissal,
+        # on_change=handle_change,
+        controls=[
+            ft.Container(height=12),
+            ft.NavigationDrawerDestination(
+                label="Item 1",
+                icon=ft.Icons.DOOR_BACK_DOOR_OUTLINED,
+                selected_icon=ft.Icon(ft.Icons.DOOR_BACK_DOOR),
             ),
-        ft.IconButton(ft.Icons.TEXT_SNIPPET,icon_size=15,),
-        ft.IconButton(ft.Icons.TEXT_SNIPPET,icon_size=15),
-        ft.IconButton(ft.Icons.CLOSE,icon_size=15,on_click=close_app),
+            ft.Divider(thickness=2),
+            ft.NavigationDrawerDestination(
+                icon=ft.Icon(ft.Icons.MAIL_OUTLINED),
+                label="Item 2",
+                selected_icon=ft.Icons.MAIL,
+            ),
+            ft.NavigationDrawerDestination(
+                icon=ft.Icon(ft.Icons.PHONE_OUTLINED),
+                label="Item 3",
+                selected_icon=ft.Icons.PHONE,
+            ),
         ],
-        
     )
+
     
     def route_change(e):
         page.views.clear()
@@ -97,12 +56,13 @@ async def main(page: ft.Page):
             page.views.append(ft.View(
                 route=page.route,
                 controls=[builder()],
-                appbar=appbar
+                drawer=drawer
             ))
             
         page.update()
     page.on_route_change = route_change
-    await page.push_route("/create_colendar_start")
+    logging.info('MAIN START')
+    await page.push_route("/home")
     page.window.height = 700
     page.window.width = 1500
  

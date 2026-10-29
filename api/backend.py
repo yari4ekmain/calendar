@@ -16,6 +16,7 @@ class Generator():
         with open(path,"r") as f:
             self.data = json.load(f)
             self.old = self.data["old"]
+        return self.data
     def _generetor(self,inform_start):
         self.inform_start = inform_start
         self.old = int(self.inform_start[1])
@@ -31,7 +32,7 @@ class Generator():
             _mes_data = []
             for day in range(1,31 +1):
                 event = []
-                self.logger.info(f"_generetor: day:{day} mes:{mes}")
+                
                 _day_data={
                     "day":day,
                     "mes":mes,
@@ -44,6 +45,7 @@ class Generator():
                     continue
                 _day_data["weekday"] = self._get_shift(mes,day)
                 _mes_data.append(_day_data)
+            self.logger.info("GENERATOR RENEREIN aplay")
             self.data[f"{mes}"]=_mes_data
         return self.data
     def _addEvents(self, work: int,chill: int,sdvig: int,event):
@@ -126,3 +128,22 @@ def average_hex_color(hex1: str, hex2: str) -> str:
     avg_b = (b1 + b2) / 2
 
     return rgb_to_hex(avg_r, avg_g, avg_b)
+
+g = Generator()
+event_1 = {
+      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+      "event_color": "#00ff0d",
+      "start_time": "  ",
+      "end_time": "  "
+    }
+event_2 = {
+      "event_name": "cull",
+      "event_color": "#8c00ff",
+      "start_time": "  ",
+      "end_time": "  "
+    }
+g._generetor(['test',2026])
+g._addEvents(3,3,0,event_1)
+g._addEventWeekday(6,event_2)
+g._addEventWeekday(0,event_2)
+g._seve('data/dataTEST.json')

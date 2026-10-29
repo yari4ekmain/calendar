@@ -1,5 +1,5 @@
 {
-  "name": "asd",
+  "name": "test",
   "old": 2026,
   "weeks": {
     "1": 3,
@@ -18,13 +18,19 @@
   "events": [
     {
       "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#9c27b0",
+      "event_color": "#00ff0d",
       "start_time": "  ",
       "end_time": "  "
     },
     {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#9c27b0",
+      "event_name": "cull",
+      "event_color": "#8c00ff",
+      "start_time": "  ",
+      "end_time": "  "
+    },
+    {
+      "event_name": "cull",
+      "event_color": "#8c00ff",
       "start_time": "  ",
       "end_time": "  "
     }
@@ -33,13 +39,27 @@
     {
       "day": 1,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 2,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -48,7 +68,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -58,13 +78,27 @@
     {
       "day": 4,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 5,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -79,7 +113,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -89,44 +123,72 @@
     {
       "day": 8,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 9,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 10,
       "mes": 1,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 11,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 12,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 13,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -135,7 +197,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -145,7 +207,14 @@
     {
       "day": 15,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -157,32 +226,52 @@
     {
       "day": 17,
       "mes": 1,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 18,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 19,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 20,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -191,7 +280,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -213,45 +302,64 @@
     {
       "day": 24,
       "mes": 1,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 25,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 26,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 27,
       "mes": 1,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 28,
       "mes": 1,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -272,7 +380,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -284,13 +392,39 @@
     {
       "day": 1,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 2,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -302,14 +436,7 @@
     {
       "day": 4,
       "mes": 2,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -321,7 +448,14 @@
     {
       "day": 6,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -330,7 +464,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -340,13 +474,33 @@
     {
       "day": 8,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 9,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -358,26 +512,33 @@
     {
       "day": 11,
       "mes": 2,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 12,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 13,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -386,7 +547,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -396,13 +557,27 @@
     {
       "day": 15,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 16,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -417,7 +592,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -427,44 +602,72 @@
     {
       "day": 19,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 20,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 21,
       "mes": 2,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 22,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 23,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 24,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -473,7 +676,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -483,7 +686,14 @@
     {
       "day": 26,
       "mes": 2,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -495,14 +705,7 @@
     {
       "day": 28,
       "mes": 2,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     }
   ],
@@ -510,19 +713,46 @@
     {
       "day": 1,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 2,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 3,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -531,7 +761,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -553,45 +783,64 @@
     {
       "day": 7,
       "mes": 3,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 8,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 9,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 10,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 11,
       "mes": 3,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -612,7 +861,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -622,13 +871,39 @@
     {
       "day": 15,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 16,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -640,14 +915,7 @@
     {
       "day": 18,
       "mes": 3,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -659,7 +927,14 @@
     {
       "day": 20,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -668,7 +943,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -678,13 +953,33 @@
     {
       "day": 22,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 23,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -696,26 +991,33 @@
     {
       "day": 25,
       "mes": 3,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 26,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 27,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -724,7 +1026,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -734,13 +1036,27 @@
     {
       "day": 29,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 30,
       "mes": 3,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -757,7 +1073,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -767,44 +1083,72 @@
     {
       "day": 2,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 3,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 4,
       "mes": 4,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 5,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 6,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 7,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -813,7 +1157,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -823,7 +1167,14 @@
     {
       "day": 9,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -835,32 +1186,52 @@
     {
       "day": 11,
       "mes": 4,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 12,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 13,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 14,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -869,7 +1240,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -891,45 +1262,64 @@
     {
       "day": 18,
       "mes": 4,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 19,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 20,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 21,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 22,
       "mes": 4,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -950,7 +1340,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -960,13 +1350,39 @@
     {
       "day": 26,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 27,
       "mes": 4,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -978,14 +1394,7 @@
     {
       "day": 29,
       "mes": 4,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -999,7 +1408,14 @@
     {
       "day": 1,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -1008,7 +1424,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1018,13 +1434,33 @@
     {
       "day": 3,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 4,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1036,26 +1472,33 @@
     {
       "day": 6,
       "mes": 5,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 7,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 8,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -1064,7 +1507,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1074,13 +1517,27 @@
     {
       "day": 10,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 11,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1095,7 +1552,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1105,44 +1562,72 @@
     {
       "day": 14,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 15,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 16,
       "mes": 5,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 17,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 18,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 19,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -1151,7 +1636,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1161,7 +1646,14 @@
     {
       "day": 21,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -1173,32 +1665,52 @@
     {
       "day": 23,
       "mes": 5,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 24,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 25,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 26,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -1207,7 +1719,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1229,20 +1741,26 @@
     {
       "day": 30,
       "mes": 5,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 31,
       "mes": 5,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     }
   ],
@@ -1250,26 +1768,39 @@
     {
       "day": 1,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 2,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 3,
       "mes": 6,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -1290,7 +1821,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1300,13 +1831,39 @@
     {
       "day": 7,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 8,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1318,14 +1875,7 @@
     {
       "day": 10,
       "mes": 6,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -1337,7 +1887,14 @@
     {
       "day": 12,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -1346,7 +1903,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1356,13 +1913,33 @@
     {
       "day": 14,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 15,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1374,26 +1951,33 @@
     {
       "day": 17,
       "mes": 6,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 18,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 19,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -1402,7 +1986,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1412,13 +1996,27 @@
     {
       "day": 21,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 22,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1433,7 +2031,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1443,44 +2041,72 @@
     {
       "day": 25,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 26,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 27,
       "mes": 6,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 28,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 29,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 30,
       "mes": 6,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     }
   ],
@@ -1491,7 +2117,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1501,7 +2127,14 @@
     {
       "day": 2,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -1513,32 +2146,52 @@
     {
       "day": 4,
       "mes": 7,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 5,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 6,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 7,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -1547,7 +2200,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1569,45 +2222,64 @@
     {
       "day": 11,
       "mes": 7,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 12,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 13,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 14,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 15,
       "mes": 7,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -1628,7 +2300,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1638,13 +2310,39 @@
     {
       "day": 19,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 20,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1656,14 +2354,7 @@
     {
       "day": 22,
       "mes": 7,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -1675,7 +2366,14 @@
     {
       "day": 24,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -1684,7 +2382,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1694,13 +2392,33 @@
     {
       "day": 26,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 27,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1712,26 +2430,33 @@
     {
       "day": 29,
       "mes": 7,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 30,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 31,
       "mes": 7,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     }
   ],
@@ -1742,7 +2467,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1752,13 +2477,27 @@
     {
       "day": 2,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 3,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -1773,7 +2512,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1783,44 +2522,72 @@
     {
       "day": 6,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 7,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 8,
       "mes": 8,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 9,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 10,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 11,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -1829,7 +2596,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1839,7 +2606,14 @@
     {
       "day": 13,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -1851,32 +2625,52 @@
     {
       "day": 15,
       "mes": 8,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 16,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 17,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 18,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -1885,7 +2679,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1907,45 +2701,64 @@
     {
       "day": 22,
       "mes": 8,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 23,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 24,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 25,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 26,
       "mes": 8,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -1966,7 +2779,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -1976,13 +2789,39 @@
     {
       "day": 30,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 31,
       "mes": 8,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     }
   ],
@@ -1996,14 +2835,7 @@
     {
       "day": 2,
       "mes": 9,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -2015,7 +2847,14 @@
     {
       "day": 4,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2024,7 +2863,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2034,13 +2873,33 @@
     {
       "day": 6,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 7,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2052,26 +2911,33 @@
     {
       "day": 9,
       "mes": 9,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 10,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 11,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2080,7 +2946,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2090,13 +2956,27 @@
     {
       "day": 13,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 14,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2111,7 +2991,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2121,44 +3001,72 @@
     {
       "day": 17,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 18,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 19,
       "mes": 9,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 20,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 21,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 22,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2167,7 +3075,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2177,7 +3085,14 @@
     {
       "day": 24,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -2189,32 +3104,52 @@
     {
       "day": 26,
       "mes": 9,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 27,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 28,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 29,
       "mes": 9,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2223,7 +3158,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2247,45 +3182,64 @@
     {
       "day": 3,
       "mes": 10,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 4,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 5,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 6,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 7,
       "mes": 10,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -2306,7 +3260,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2316,13 +3270,39 @@
     {
       "day": 11,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 12,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2334,14 +3314,7 @@
     {
       "day": 14,
       "mes": 10,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -2353,7 +3326,14 @@
     {
       "day": 16,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2362,7 +3342,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2372,13 +3352,33 @@
     {
       "day": 18,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 19,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2390,26 +3390,33 @@
     {
       "day": 21,
       "mes": 10,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 22,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 23,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2418,7 +3425,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2428,13 +3435,27 @@
     {
       "day": 25,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 26,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2449,7 +3470,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2459,26 +3480,33 @@
     {
       "day": 29,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 30,
       "mes": 10,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 31,
       "mes": 10,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     }
   ],
@@ -2486,19 +3514,40 @@
     {
       "day": 1,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 2,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 3,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2507,7 +3556,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2517,7 +3566,14 @@
     {
       "day": 5,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -2529,32 +3585,52 @@
     {
       "day": 7,
       "mes": 11,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 8,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 9,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 10,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2563,7 +3639,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2585,45 +3661,64 @@
     {
       "day": 14,
       "mes": 11,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 15,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 16,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 17,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 18,
       "mes": 11,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -2644,7 +3739,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2654,13 +3749,39 @@
     {
       "day": 22,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 23,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2672,14 +3793,7 @@
     {
       "day": 25,
       "mes": 11,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
@@ -2691,7 +3805,14 @@
     {
       "day": 27,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2700,7 +3821,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2710,13 +3831,33 @@
     {
       "day": 29,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 30,
       "mes": 11,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     }
   ],
@@ -2730,26 +3871,33 @@
     {
       "day": 2,
       "mes": 12,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
       "day": 3,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 4,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
@@ -2758,7 +3906,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2768,13 +3916,27 @@
     {
       "day": 6,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 7,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
@@ -2789,7 +3951,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2799,44 +3961,72 @@
     {
       "day": 10,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
       "day": 11,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 4
     },
     {
       "day": 12,
       "mes": 12,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 13,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 14,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 15,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2845,7 +4035,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2855,7 +4045,14 @@
     {
       "day": 17,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 3
     },
     {
@@ -2867,32 +4064,52 @@
     {
       "day": 19,
       "mes": 12,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 20,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 21,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 22,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
@@ -2901,7 +4118,7 @@
       "events": [
         {
           "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
+          "event_color": "#00ff0d",
           "start_time": "  ",
           "end_time": "  "
         }
@@ -2923,45 +4140,64 @@
     {
       "day": 26,
       "mes": 12,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 5
     },
     {
       "day": 27,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 6
     },
     {
       "day": 28,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        },
+        {
+          "event_name": "cull",
+          "event_color": "#8c00ff",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 0
     },
     {
       "day": 29,
       "mes": 12,
-      "events": [],
+      "events": [
+        {
+          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+          "event_color": "#00ff0d",
+          "start_time": "  ",
+          "end_time": "  "
+        }
+      ],
       "weekday": 1
     },
     {
       "day": 30,
       "mes": 12,
-      "events": [
-        {
-          "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-          "event_color": "#9c27b0",
-          "start_time": "  ",
-          "end_time": "  "
-        }
-      ],
+      "events": [],
       "weekday": 2
     },
     {
