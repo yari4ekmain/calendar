@@ -13,7 +13,12 @@ class MyCalendar(ft.Container):
                 content=ft.Column([
                     ft.Text(f"Год: {calend[1]}",size=15),
                     ft.Text("События:"),
-                    ft.Column([
-                        ft.Text(x['event_name']) for x in calend[2]]),],alignment=ft.Alignment.CENTER_LEFT,expand=True),)
+                    ft.Row(
+                        controls=[ft.Container(ft.Column([ft.Text(x['event_name']) for x in calend[2]]),padding=ft.Padding.only(left=30))],
+                        expand=True,
+                        alignment=ft.MainAxisAlignment.START,
+                        vertical_alignment=ft.CrossAxisAlignment.START)
+                    ])
+                )
             )
             self.content = self.PanelList
