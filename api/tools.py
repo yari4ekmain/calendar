@@ -1,6 +1,8 @@
 import json
 import datetime
 import logging.config as lg
+import logging
+import os
 CLASS_NAME = 'Tools'
 VERSION = '1.1.1.1'
 NAMEAPP = "CALENDAR"
@@ -25,7 +27,7 @@ LOGGING_CONFIG = {
         },
         "file": {
             "class": "logging.handlers.RotatingFileHandler",
-            "filename": "app.log",
+            "filename": "logs/app.log",
             "maxBytes": 10_000_000,
             "backupCount": 5,
             "formatter": "detailed",
@@ -40,10 +42,13 @@ LOGGING_CONFIG = {
 START_SETTING = {
     "version":VERSION,
     "language":'ru',
-    "save_pach":f'\\save',
+    "save_pach":f'{os.getcwd()}',
     "calendars": [],
     "tam":"black"
 }
+
+SETTING = {}
+
 class Tools():
     def __init__(self):
         super().__init__()
@@ -51,6 +56,7 @@ class Tools():
 
 
     def StartApp(self):
+        global SETTING
         lg.dictConfig(LOGGING_CONFIG)
         try:
             with open('setting.json', 'r', encoding='utf-8') as f:
@@ -62,5 +68,25 @@ class Tools():
             with open('setting.json', 'w', encoding='utf-8') as f:
                 json.dump(START_SETTING, f, indent=2, ensure_ascii=False)
             data = START_SETTING  
-
-        
+        SETTING = data
+        if not os.path.isdir(SETTING["save_pach"]+"/data"):
+            os.mkdir(SETTING["save_pach"]+"/data")
+        return SETTING
+    def ReturnCalendarsData(self):
+        data_pash = SETTING["save_pach"]+"/data"
+        lis = os.listdir(data_pash)
+        if len(lis)==0:
+            logging.info("ReturnCalendarsData: NOT CALENDAR")
+            return []
+        reqvest = []
+        for calendar in lis:
+            try:
+                with open(f"{data_pash}/{calendar}","r") as f:
+                    data = json.load(f)
+                name = data["name"]
+                old = data["old"]
+                events = data["events"]
+                reqvest.append([name,old,events])
+            except KeyError as e:
+                logging.error(f"ReturnCalendarsData: {e}")
+        return reqvest

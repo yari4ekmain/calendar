@@ -93,13 +93,4 @@ class CreateCalendarDayToDay(ft.Container):
         self.CreateCalendarList._update(data)
         self.CreateCalendarList.update()
 
-class CreateCalendarUser(ft.Container):
-    def __init__(self,inform_start):
-        super().__init__()
-        self.content = ft.Text('Uaer')
-
-class CreateCalendarWeekday(ft.Container):
-    def __init__(self,inform_start):
-        super().__init__()
-        self.content = ft.Text('Weekday')
 

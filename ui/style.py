@@ -59,3 +59,10 @@ class CastomButton(ft.Container):
         e.control.bgcolor = None
         e.control.on_click = self._click_on
         e.control.data = 'off'
+
+class CastomLanDay(ft.Stack):
+    def __init__(self):
+        super().__init__()
+        self.width = 400
+        self.height = 400
+        self.controls = [ft.Container(expand=True,bgcolor="#814a4a")]
