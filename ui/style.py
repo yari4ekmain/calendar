@@ -27,6 +27,7 @@ class CastomButton(ft.Container):
             self._on_click_handler = on_click
 
         self._text_control = ft.Text(
+            expand=expand,
             value=text,
             size=size,
             color=color,

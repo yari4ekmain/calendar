@@ -3,7 +3,7 @@ from api.backend import average_hex_color
 from flet_color_pickers import BlockPicker
 from ui.style import CastomButton
 import datetime
-import logging
+import logging as lg
 
 COLORS = [
     "#f44336",  # Красный
@@ -38,12 +38,15 @@ class CreateCalendarList(ft.Container):
         self.calendar = calendar
         self.NextButton = ft.TextButton('Next',on_click=self.render_next)
         self.ReversButton = ft.TextButton('Revers',on_click=self.render_revers)
+        self.lg = lg.getLogger(f"{__name__}.CreateCalendarList")
         self.expand = True
         self.RenderListCalendar()
 
     def TESTdata(self, e):
+        self.lg.info(f"on_click in {e.control.data}")
         print(e.control.data)
     def render_next(self,e):
+        self.lg.info(f"RESNDER LIST {self.DATARENDER}")
         if self.DATARENDER>=12:
             self.DATARENDER = 1
         else: self.DATARENDER+=1
@@ -51,6 +54,7 @@ class CreateCalendarList(ft.Container):
         self.update()
 
     def render_revers(self,e):
+        self.lg.info(f"RESNDER LIST {self.DATARENDER}")
         if self.DATARENDER<=1:
             self.DATARENDER = 12
         else: self.DATARENDER-=1
@@ -94,17 +98,15 @@ class CreateCalendarList(ft.Container):
             x = ft.DataCell(ft.Container(ft.Text(day["day"],color=color),on_click=self.TESTdata,data=day,expand=True))
             dataNed.append(x)   
             dayMes+=1
-            print('day:',dayMes,'neddata:', len(dataNed))
+            
             if int(day["day"])==lens:
                 
                 while len(dataNed)!=7:
                     dayMes+=1
-                    print('--',dayMes%7)
                     x = ft.DataCell(ft.Container(ft.Text("-"),expand=True))
                     dataNed.append(x) 
-                print('----','neddata:', len(dataNed))
                 data.rows.append(ft.DataRow(cells=dataNed,expand=True))
-        
+        self.lg.info("RENDER")
         self.content = ft.Column([
                     ft.Text(self.listtextmes[self.DATARENDER]),
                     ft.Row([
@@ -113,6 +115,7 @@ class CreateCalendarList(ft.Container):
                         self.NextButton
                 ])])
     def _update(self, data):
+        self.lg.info("CreateCalendarList: Update")
         self.calendar = data
         self.RenderListCalendar()
         self.update()
@@ -124,10 +127,11 @@ class CreateEventList(ft.ExpansionPanelList):
         self.generator = generator
         self.expand_icon_color=ft.Colors.AMBER
         self.divider_color=ft.Colors.AMBER
+        self.lg = lg.getLogger(f"{__name__}.CreateEventList")
         self.controls=[]
 
     def _remuveEvent(self, e):
-        print(e.control.data)
+        self.lg.info(f"RETORN EVENT {e.control.data}")
         event = e.control.data
         data = self.generator._remuveEvent(event)
         self.RenderPaner(data)
@@ -165,12 +169,13 @@ class CreateEventList(ft.ExpansionPanelList):
                         on_click=self._remuveEvent,
                         data=event
                     ),),))
+        self.lg.info("RenderPaner: RENDER")
 
 
 class CreateEvent(ft.Container):
     def __init__(self,addevent, addeventweekday):
         super().__init__()
-        self.logger = logging.getLogger(f"{__name__}.CreateEvent")
+        self.lg = lg.getLogger(f"{__name__}.CreateEvent")
         self.addevent = addevent
         self.addeventweekday = addeventweekday
         self.label_event = ft.TextField('Название',width=470)
@@ -229,7 +234,7 @@ class CreateEvent(ft.Container):
         self.Button_remuvetime = ft.IconButton(icon=ft.Icons.REMOVE_CIRCLE_OUTLINE,disabled=True,icon_color="#800000",disabled_color="#313131",on_click=self._remuvetime)
         self.texttime = ft.Row([ft.Text("  "), ft.Text("  "),self.Button_remuvetime], alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
         self.apllay = ft.TextButton('Добавить событие',on_click=self._apllay)
-        self.logger.info("CreateEvent: init")
+        self.lg.info("CreateEvent: init")
         self.RenderInput()
 
     def RenderInput(self):
@@ -297,14 +302,14 @@ class CreateEvent(ft.Container):
             try:
                 if int(data.value) in [None,'']:
                     data.border_color = "#690000"
-                    self.logger.warning(f"CreateEvent NOT VOLID")
+                    self.lg.warning(f"CreateEvent NOT VOLID")
                     return True
                 data.border_color = "#087912"
-                self.logger.info(f"CreateEvent VALID {data.value}")
+                self.lg.info(f"CreateEvent VALID {data.value}")
                 return False
             except TypeError as e:
                 data.border_color = "#690000"
-                self.logger.warning(f"CreateEvent VOLID TUPEERROR {e}")
+                self.lg.warning(f"CreateEvent VOLID TUPEERROR {e}")
                 return True
 
         flag = True

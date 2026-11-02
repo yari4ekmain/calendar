@@ -24,8 +24,6 @@ async def main(page: ft.Page):
         '/my_calendar': lambda: MyCalendar(inform),
     }
     drawer = ft.NavigationDrawer(
-        # on_dismiss=handle_dismissal,
-        # on_change=handle_change,
         controls=[
             ft.Container(height=12),
             ft.NavigationDrawerDestination(

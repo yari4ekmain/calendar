@@ -1,5 +1,6 @@
 import flet as ft
 from ui.render_list_calendar import CreateCalendarList, CreateEventList,CreateEvent
+from ui.style import CastomButton
 from api.backend import Generator
 import logging
 STARTDATA = []
@@ -9,48 +10,63 @@ class CreateCalendarStart(ft.Row):
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarStart")
         self.inform = inform
         self.error = ft.Text("",color="#ff5e5e")
-        self.info = ft.Text('   Свободное расписание —  конкретные даты.',text_align=ft.MainAxisAlignment.CENTER)
         self.input_name = ft.TextField(label="Название")
         self.input_god = ft.TextField(value=2026)
-        self.enter = ft.TextButton(content='Далее',on_click=self._valid)
+        self.aplay = CastomButton(text='Далее',on_click=self._aplay,size=15,padding=5,border_radius=5)
+        self.undo = CastomButton(text="Назад",on_click=self._undo,size=15,padding=5,border_radius=5)
         self.controls = [ft.Column([
-                    ft.Text('Создание календаря',size=20),
+                    ft.Text('Создание календаря',size=20,weight=ft.FontWeight.BOLD),
                     self.error,
                     ft.Text("   Введите название:"),
                     ft.Container(content=self.input_name,padding=ft.Padding(15,0,0,0),width=400),
 
                     ft.Text("   Введите год:"),
                     ft.Container(content=self.input_god,padding=ft.Padding(15,0,0,0),width=400),
-                    self.info,
-                    self.enter
-            ])]
+                    ft.Container(ft.Row([
+                        self.aplay,
+                        self.undo
+                    ],alignment=ft.MainAxisAlignment.SPACE_BETWEEN),width=300)
+            ],expand=True,alignment=ft.MainAxisAlignment.CENTER,horizontal_alignment=ft.CrossAxisAlignment.CENTER)]
        
         self.alignment=ft.MainAxisAlignment.CENTER
         self.expand = True
         self.logger.info("CreateCalendarStart: init")
-    async def _valid(self,e):
-        LISTPOLL = ['Название','Год','Тип']
-        if (self.input_name.value!='' and self.input_god.value!=''):
+
+    def _valid(self,e):
+        flag = True
+        if (str(self.input_name.value).replace(' ','') in ["", None]):
+            self.logger.warning("NOT VOLID")
+            self.input_name.color = "#7a0505"
+            flag = False
+        else:  self.input_name.color = "#007535"
+        if (str(self.input_god.value).replace(' ','') in ["", None]):
+            try:
+                int(self.input_god.value)
+            except TypeError as e:
+                self.logger.warning(f"{e}")
+            self.logger.warning("NOT VOLID")
+            self.input_god.color = "#7a0505"
+            flag = False
+        else:  self.input_god.color = "#007535"
+        self.update()
+        return flag
+
+    async def _aplay(self, e):
+        if self._valid:
             global STARTDATA
             STARTDATA=[self.input_name.value,self.input_god.value]
-            await self.inform('/create_colendar_day_to_day') 
-        else:
-            if self.input_name.value=='':
-                x=0
-            elif self.input_god.value=='':
-                x=1
-            else:
-                x=2
-            self.error(f"_valid: NOT VALUE: {x}")
-            self.error.value = f'   не заполнено поле: {LISTPOLL[x]}'
-            self.update()
+            await self.inform('/create_colendar_day_to_day')         
 
+    async def _undo(self, e):
+        await self.inform("/home")
+    
 class CreateCalendarDayToDay(ft.Container):
-    def __init__(self,inform_start):
+    def __init__(self,inform):
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarDayToDay")
         self.generator = Generator()
         global STARTDATA
+        self.inform = inform
         self.inform_start = STARTDATA
         self.alignment = ft.Alignment.TOP_CENTER
 
@@ -60,9 +76,11 @@ class CreateCalendarDayToDay(ft.Container):
         self.column = ft.Column([
             self.panel_list 
             ],horizontal_alignment=ft.CrossAxisAlignment.START,alignment=ft.MainAxisAlignment.START,scroll=ft.ScrollMode.AUTO)
-
+        self.aplay = ft.TextButton(content="Сохранить",on_click=self._aplay)
+        self.undo = ft.TextButton(content="Отменить",on_click=self._undo)
+        self.row_button = ft.Row([self.undo,self.aplay])
         self.content = (ft.Column([
-                ft.Row([ft.Container(self.column,bgcolor="#242424",width=400,height=300),self.CreateCalendarList]),
+                ft.Row([ft.Container(self.column,bgcolor="#242424",width=400,height=300),ft.Column([self.row_button,self.CreateCalendarList],expand=True)]),
                 ft.Row([CreateEvent(self._addevent,self._addeventweekdayx)],expand=True)],
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN))
         self.logger.info("CreateCalendarDayToDay: init")
@@ -93,4 +111,10 @@ class CreateCalendarDayToDay(ft.Container):
         self.CreateCalendarList._update(data)
         self.CreateCalendarList.update()
 
-
+    async def _aplay(self, e):
+        from api.tools import SETTING
+        from time import time as tm
+        self.generator._seve(SETTING["save_pach"]+"/data/"+f"{tm()}.json")
+        await self.inform("/home")
+    async def _undo(self, e):
+        await self.inform("/home")
