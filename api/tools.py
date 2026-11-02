@@ -90,3 +90,24 @@ class Tools():
             except KeyError as e:
                 logging.error(f"ReturnCalendarsData: {e}")
         return reqvest
+    
+    def SortEvent(self,events):
+        '''-> end_minutes-start_minutes,event,start_minutes,end_minutes '''
+        sort_len_list = []
+        for event in events:
+            start_not_valid = event["start_time"]
+            if start_not_valid != '':
+                time_start = start_not_valid
+            else: time_start = '00:00:00'
+            h, m, _ = map(int, time_start.split(":"))
+            start_minutes = h * 60 + m
+
+            end_not_volid = event["end_time"]
+            if end_not_volid!='':
+                time_end = end_not_volid
+            else: time_end = "24:00:00"
+            h, m, _ = map(int, time_end.split(":"))
+            end_minutes = h * 60 + m   
+            sort_len_list.append([end_minutes-start_minutes,event,start_minutes,end_minutes])
+            sort_len_list = sorted(sort_len_list)[::-1]
+        return sort_len_list

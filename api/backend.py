@@ -129,21 +129,21 @@ def average_hex_color(hex1: str, hex2: str) -> str:
 
     return rgb_to_hex(avg_r, avg_g, avg_b)
 
-g = Generator()
-event_1 = {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#00ff0d",
-      "start_time": "  ",
-      "end_time": "  "
-    }
-event_2 = {
-      "event_name": "cull",
-      "event_color": "#8c00ff",
-      "start_time": "  ",
-      "end_time": "  "
-    }
-g._generetor(['test',2026])
-g._addEvents(3,3,0,event_1)
-g._addEventWeekday(6,event_2)
-g._addEventWeekday(0,event_2)
-g._seve('data/dataTEST.json')
+# g = Generator()
+# event_1 = {
+#       "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
+#       "event_color": "#00ff0d",
+#       "start_time": "  ",
+#       "end_time": "  "
+#     }
+# event_2 = {
+#       "event_name": "cull",
+#       "event_color": "#8c00ff",
+#       "start_time": "  ",
+#       "end_time": "  "
+#     }
+# g._generetor(['test',2026])
+# g._addEvents(3,3,0,event_1)
+# g._addEventWeekday(6,event_2)
+# g._addEventWeekday(0,event_2)
+# g._seve('data/dataTEST.json')

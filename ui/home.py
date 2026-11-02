@@ -6,8 +6,8 @@ class Home(ft.Container):
     def __init__(self,inform):
         self.inf = inform
         super().__init__()
-        calendar = Generator()._open('data/dataTEST.json')
-        self.home_calendar = ft.Container(content=ft.Row([CreateCalendarList(calendar=calendar)]),expand=True)
+        calendar = Generator()._open('data/1793656755.0446534.json')
+        self.home_calendar = ft.Container(content=ft.Row([CastomLanDay(),CreateCalendarList(calendar=calendar)]),expand=True)
         self.addcalendar = CastomButton(text = 'Создать календарь',size=15,padding=5,border_radius=3,on_click=self._create)
         self.my_calendar = CastomButton(text = 'Мои календари',size=15,padding=5,border_radius=3,on_click=self._my_calendr)
         self.setting = CastomButton(text = 'Настройки',size=15,padding=5,border_radius=3,on_click=None)

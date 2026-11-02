@@ -345,8 +345,8 @@ class CreateEvent(ft.Container):
             event = {
                 "event_name":self.label_event.value,
                 "event_color":self.color_event.color,
-                "start_time":self.texttime.controls[0].value,
-                "end_time":self.texttime.controls[1].value
+                "start_time":(str(self.texttime.controls[0].value).replace(' ','') if self.texttime.controls[0].value != None else ''),
+                "end_time":(str(self.texttime.controls[1].value).replace(" ",'').replace('-','') if self.texttime.controls[1].value!=None else '')
                      }
             if self.type_event.selected_index==0:
                 self.addevent(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
