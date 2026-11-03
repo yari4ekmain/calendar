@@ -27,8 +27,11 @@ COLORS = [
 SIZEBUTTONDAY = 50
 
 class CreateCalendarList(ft.Container):
-    def __init__(self,calendar):
-        
+    def __init__(
+            self,
+            calendar = None,
+            reqvest = None):
+        self.reqvest = reqvest
         super().__init__()
         self.DATARENDER = 1
         self.listtextmes = [
@@ -44,7 +47,7 @@ class CreateCalendarList(ft.Container):
 
     def TESTdata(self, e):
         self.lg.info(f"on_click in {e.control.data}")
-        print(e.control.data)
+        self.reqvest(e.control.data)
     def render_next(self,e):
         self.lg.info(f"RESNDER LIST {self.DATARENDER}")
         if self.DATARENDER>=12:

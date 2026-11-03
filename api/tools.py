@@ -86,7 +86,8 @@ class Tools():
                 name = data["name"]
                 old = data["old"]
                 events = data["events"]
-                reqvest.append([name,old,events])
+                path = f"{data_pash}/{calendar}"
+                reqvest.append([name,old,events,path])
             except KeyError as e:
                 logging.error(f"ReturnCalendarsData: {e}")
         return reqvest
@@ -109,5 +110,5 @@ class Tools():
             h, m, _ = map(int, time_end.split(":"))
             end_minutes = h * 60 + m   
             sort_len_list.append([end_minutes-start_minutes,event,start_minutes,end_minutes])
-            sort_len_list = sorted(sort_len_list)[::-1]
+            sort_len_list = sorted(sort_len_list, key=lambda x: x[0], reverse=True)
         return sort_len_list

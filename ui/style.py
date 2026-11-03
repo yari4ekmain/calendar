@@ -1,43 +1,7 @@
 import flet as ft
 import typing
 from api.tools import Tools
-test_events = [{
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#ff5722",
-      "start_time": "",
-      "end_time": ""
-    },
-    {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#4caf50",
-      "start_time": "07:30:00",
-      "end_time": "19:30:00"
-    },
-    {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#4caf50",
-      "start_time": "07:30:00",
-      "end_time": "19:30:00"
-    },
-    {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#cddc39",
-      "start_time": "00:30:00",
-      "end_time": "02:30:00"
-    },
-    {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#2196f3",
-      "start_time": "22:30:00",
-      "end_time": ""
-    },
-    {
-      "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-      "event_color": "#795548",
-      "start_time": "",
-      "end_time": "03:30:00"
-    }
-  ]
+
 class CastomButton(ft.Container):
     def __init__(
         self,
@@ -103,27 +67,47 @@ class CastomButton(ft.Container):
 class CastomLanDay(ft.Stack):
     def __init__(self):
         super().__init__()
-        global test_events
-        events = test_events
         self.width = 150
         self.slep_grid = 1
-        self.height = 400
-        self.controls = []
-        sort_events = Tools().SortEvent(events)
-        for event in sort_events:
-            name = event[1]["event_name"]
-            color = event[1]["event_color"]
-            self.controls.append(
-                ft.Container(
-                    width=self.width,
-                    bgcolor=color,
-                    margin=ft.Margin(top=int((self.height / (24 * 60)) * (event[2]))+10,left = 40),
-                    height=int((self.height / (24 * 60)) * (event[0]))
+        self.height = 350 
+    def Render(self,events_day):       
+        if len(events_day)!=0:
+            sort_events = Tools().SortEvent(events_day)
+            for event in sort_events:
+                color = event[1]["event_color"]
+                self.controls.append(
+                    ft.Container(
+                        width=self.width,
+                        bgcolor=color,
+                        margin=ft.Margin(top=int((self.height / (24 * 60)) * (event[2]))+10,left = 50),
+                        height=int((self.height / (24 * 60)) * (event[0])),
+                        
+                    )
                 )
-            )
+
         time_next_grid = 0
         grid_alig = ft.Alignment.TOP_CENTER
         for grid in range(0,25,self.slep_grid):
-            cont_grid = ft.Container(content=ft.Row([ft.Text(f"{grid}:00"),ft.Container(bgcolor="#910000",height=2,alignment=grid_alig,width=self.width-35,)]),padding=ft.Padding.only(top=time_next_grid))
+            cont_grid = ft.Container(content=ft.Row([ft.Text(f"{grid}:00" if len(str(grid))==2 else f"0{grid}:00"),ft.Container(bgcolor="#910000",height=2,alignment=grid_alig,width=self.width-35,)]),padding=ft.Padding.only(top=time_next_grid))
             self.controls.append(cont_grid)
             time_next_grid+=self.height / (24 / self.slep_grid)
+    def _update(self, events_day=[]):
+        self.controls.clear()
+        self.Render(events_day)
+        self.update()
+
+class CastomColorExplanation(ft.Column):
+    def __init__(self):
+        super().__init__()
+        self.alignment = ft.MainAxisAlignment.START
+    def Render(self,events = []):
+        if len(events)!=0: 
+          for event in events:
+            color = event["event_color"]
+            name = event["event_name"]
+            obg = ft.Row([ft.Container(bgcolor=color,width=10,height=10),ft.Text(value=name)])
+            self.controls.append(obg)
+    def _update(self, events = []):
+        self.controls.clear()
+        self.Render(events)
+        self.update()

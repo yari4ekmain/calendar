@@ -5,7 +5,9 @@ from api.backend import Generator
 import logging
 STARTDATA = []
 class CreateCalendarStart(ft.Row):
-    def __init__(self,inform):
+    def __init__(
+            self,
+            inform):
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarStart")
         self.inform = inform
@@ -61,7 +63,11 @@ class CreateCalendarStart(ft.Row):
         await self.inform("/home")
     
 class CreateCalendarDayToDay(ft.Container):
-    def __init__(self,inform):
+    def __init__(
+            self,
+            inform,
+            path = '/generait'):
+        
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarDayToDay")
         self.generator = Generator()
@@ -69,8 +75,10 @@ class CreateCalendarDayToDay(ft.Container):
         self.inform = inform
         self.inform_start = STARTDATA
         self.alignment = ft.Alignment.TOP_CENTER
-
-        self.CreateCalendarList = CreateCalendarList(self.generator._generetor(self.inform_start))
+        if path=='/generait':
+            data = self.generator._generetor(self.inform_start)
+        else: data = self.generator._open(path)
+        self.CreateCalendarList = CreateCalendarList(data)
         self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
 
         self.column = ft.Column([

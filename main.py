@@ -3,6 +3,7 @@ import flet as ft
 
 from ui.create_calendar import CreateCalendarStart, CreateCalendarDayToDay
 from ui.my_calendar import MyCalendar
+from ui.open_calendar import OpenCalendar
 from ui.home import Home
 from api.tools import Tools
 
@@ -21,6 +22,7 @@ async def main(page: ft.Page):
         '/create_colendar_start': lambda: CreateCalendarStart(inform),
         '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform),
         '/setting': lambda: None,
+        '/open': lambda: OpenCalendar(inform),
         '/my_calendar': lambda: MyCalendar(inform),
     }
     drawer = ft.NavigationDrawer(
