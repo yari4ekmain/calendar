@@ -7,6 +7,7 @@ import logging
 
 class OpenCalendar(ft.Container):
     def __init__(self,
+                 cache, 
                  inf,
                  path_calendar,
                  generator = Generator()):

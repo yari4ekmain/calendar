@@ -7,6 +7,7 @@ STARTDATA = []
 class CreateCalendarStart(ft.Row):
     def __init__(
             self,
+            cache, 
             inform):
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarStart")
@@ -65,6 +66,7 @@ class CreateCalendarStart(ft.Row):
 class CreateCalendarDayToDay(ft.Container):
     def __init__(
             self,
+            cache, 
             inform,
             path = '/generait'):
         

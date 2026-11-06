@@ -5,10 +5,10 @@ import logging
 from api.backend import Generator
 
 class MyCalendar(ft.Container):
-    def __init__(self,inform, editdef=None):
+    def __init__(self,cache, inform):
         super().__init__()
         self.inform = inform
-        self.editdef = editdef
+        self.cache = cache
         self.top_bar = ft.Row([ft.IconButton(ft.Icons.ARROW_RIGHT_ALT,on_click=self._home)])
         self.tools = Tools()
         list_data_save_calendar = self.tools.ReturnCalendarsData()
@@ -55,6 +55,8 @@ class MyCalendar(ft.Container):
             )
             self.content = ft.Column([self.top_bar,self.PanelList])
     async def _open(self, e):
+        # закешировать №315
+        self.cache._add_value()
         await self.inform('/open', e.control.data)
         self.logger.info(e.control.data)
     async def _edit(self, e):

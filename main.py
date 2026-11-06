@@ -6,12 +6,14 @@ from ui.my_calendar import MyCalendar
 from ui.open_calendar import OpenCalendar
 from ui.home import Home
 from api.tools import Tools
-from ui.import_export import Import, Export
+from api.cache import Cache
+from ui.import_export import Import, Export, ChoiceCalendar
 from ui.setting import SettingPage
 
 async def main(page: ft.Page):
     page.title = "calend tool"
     Tools().StartApp()
+    cache = Cache()
     import logging
     path_calendar = None
     async def inform(route: str, data = None):
@@ -27,14 +29,15 @@ async def main(page: ft.Page):
         logging.info(f"open_edit: {data}")
         await page.push_route("/create_colendar_day_to_day")
     routes = {
-        '/home': lambda: Home(inform),
-        '/create_colendar_start': lambda: CreateCalendarStart(inform),
-        '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform,edit_path),
-        '/setting': lambda: SettingPage(inform),
-        '/open': lambda: OpenCalendar(inform,path_calendar),
-        '/my_calendar': lambda: MyCalendar(inform,open_edit),
-        '/import': lambda: Import(inform),
-        '/export': lambda: Export(inform),
+        '/home': lambda: Home(cache,inform),
+        '/create_colendar_start': lambda: CreateCalendarStart(cache,inform),
+        '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(cache,inform,edit_path),
+        '/setting': lambda: SettingPage(cache,inform),
+        '/open': lambda: OpenCalendar(cache,inform,path_calendar),
+        '/my_calendar': lambda: MyCalendar(cache,inform,open_edit),#Закешировать №315
+        '/import': lambda: Import(cache,inform),
+        '/export': lambda: Export(cache,inform),
+        '/choice_calendar': lambda: ChoiceCalendar(cache,inform)
     }
     drawer = ft.NavigationDrawer(
         controls=[
@@ -72,10 +75,10 @@ async def main(page: ft.Page):
         page.update()
     page.on_route_change = route_change
     logging.info('MAIN START')
-    await page.push_route("/home")
+    # await page.push_route("/home")
+    await page.push_route("/choice_calendar")
     page.window.height = 700
     page.window.width = 1500
- 
     page.update()
 
 

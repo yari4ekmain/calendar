@@ -4,7 +4,7 @@ from api.tools import Tools
 from ui.style import CastomButton
 
 class SettingPage(ft.Column):
-    def __init__(self,inform):
+    def __init__(self,cache, inform):
         super().__init__()
         self.inform = inform
         self.tools = Tools()

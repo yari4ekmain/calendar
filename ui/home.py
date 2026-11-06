@@ -5,7 +5,7 @@ from ui.style import CastomButton, CastomLanDay,CastomColorExplanation
 import logging
 from api.tools import Tools
 class Home(ft.Container):
-    def __init__(self,inform):
+    def __init__(self,cache, inform):
         self.lg=logging.getLogger(f"{__name__}.Home")
         self.lg.info("START INIT HOME")
         self.inf = inform
