@@ -1,7 +1,8 @@
 {
   "version": "1.1.1.1",
   "language": "ru",
-  "save_pach": "E:\\calendar",
+  "save_pach": "E:\\calendar\\",
   "calendars": [],
-  "tam": "black"
+  "tam": "black",
+  "love_calendar_path": "E:\\calendar\\/data/1793883736.6014035.json"
 }

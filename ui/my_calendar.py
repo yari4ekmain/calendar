@@ -5,11 +5,13 @@ import logging
 from api.backend import Generator
 
 class MyCalendar(ft.Container):
-    def __init__(self,inform):
+    def __init__(self,inform, editdef=None):
         super().__init__()
         self.inform = inform
+        self.editdef = editdef
         self.top_bar = ft.Row([ft.IconButton(ft.Icons.ARROW_RIGHT_ALT,on_click=self._home)])
-        list_data_save_calendar = Tools().ReturnCalendarsData()
+        self.tools = Tools()
+        list_data_save_calendar = self.tools.ReturnCalendarsData()
         self.logger = logging.getLogger(f"{__name__}.MyCalendar")
         self.PanelList = ft.ExpansionPanelList()
         
@@ -24,11 +26,16 @@ class MyCalendar(ft.Container):
                         vertical_alignment=ft.CrossAxisAlignment.START
                             )
             self.button_open = CastomButton('Открыть',on_click=self._open,size=15,padding=5,expand=True,data=calend[3])
-            self.button_edit = CastomButton("Редактировать",on_click=self._edit,size = 15,padding=5)
-            self.button_live = CastomButton("В люимое",on_click=self._love,size = 15,padding=5)
+            self.button_edit = CastomButton("Редактировать",on_click=self._edit,size = 15,padding=5,data=calend[3])
+            self.button_live = CastomButton("В люимое",on_click=self._love,size = 15,padding=5, data=calend[3])
+            self.logger.info(f"{calend[3],self.tools.love_calendar()}")
+            if calend[3]==self.tools.love_calendar():
+                
+                titlecontrol = f"{calend[0]}   love"
+            else: titlecontrol = f"{calend[0]}"
             self.PanelList.controls.append(
                 ft.ExpansionPanel(
-                header=ft.ListTile(title=ft.Text(f"{calend[0]}")),
+                header=ft.ListTile(title=ft.Text(titlecontrol)),
                 content=ft.Container(
                     ft.Row([
                         ft.Column([
@@ -47,12 +54,14 @@ class MyCalendar(ft.Container):
                 )
             )
             self.content = ft.Column([self.top_bar,self.PanelList])
-    def _open(self, e):
+    async def _open(self, e):
+        await self.inform('/open', e.control.data)
         self.logger.info(e.control.data)
     async def _edit(self, e):
-        None
+        await self.editdef(e.control.data)
     def _love(self, e):
-        None
+        if self.tools._update_setting("love_calendar_path",e.control.data):
+            None
 
     async def _home(self, e):
         await self.inform('/home')

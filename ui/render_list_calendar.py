@@ -174,7 +174,6 @@ class CreateEventList(ft.ExpansionPanelList):
                     ),),))
         self.lg.info("RenderPaner: RENDER")
 
-
 class CreateEvent(ft.Container):
     def __init__(self,addevent, addeventweekday):
         super().__init__()
@@ -354,3 +353,13 @@ class CreateEvent(ft.Container):
             if self.type_event.selected_index==0:
                 self.addevent(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
             else: self.addeventweekday(self.button_day.controls,event)
+
+class CreateNullCalendar(ft.Container):
+    def __init__(self):
+        super().__init__()
+        self.expand = True
+        self.bgcolor = "#1A1D3B"
+        self.width = 300
+        self.height = 400
+        self.content = ft.Container(CastomButton("Выбрать календарь",padding=5,size=15),width=30,height=60)
+

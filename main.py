@@ -6,24 +6,35 @@ from ui.my_calendar import MyCalendar
 from ui.open_calendar import OpenCalendar
 from ui.home import Home
 from api.tools import Tools
-
-
+from ui.import_export import Import, Export
+from ui.setting import SettingPage
 
 async def main(page: ft.Page):
     page.title = "calend tool"
     Tools().StartApp()
     import logging
-        
-    async def inform(route):
+    path_calendar = None
+    async def inform(route: str, data = None):
+        nonlocal path_calendar
+        path_calendar = data
+        logging.info("inform")
         await page.push_route(f'{route}')
 
+    edit_path = '/generait'
+    async def open_edit(data):
+        nonlocal edit_path
+        edit_path = data
+        logging.info(f"open_edit: {data}")
+        await page.push_route("/create_colendar_day_to_day")
     routes = {
         '/home': lambda: Home(inform),
         '/create_colendar_start': lambda: CreateCalendarStart(inform),
-        '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform),
-        '/setting': lambda: None,
-        '/open': lambda: OpenCalendar(inform),
-        '/my_calendar': lambda: MyCalendar(inform),
+        '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(inform,edit_path),
+        '/setting': lambda: SettingPage(inform),
+        '/open': lambda: OpenCalendar(inform,path_calendar),
+        '/my_calendar': lambda: MyCalendar(inform,open_edit),
+        '/import': lambda: Import(inform),
+        '/export': lambda: Export(inform),
     }
     drawer = ft.NavigationDrawer(
         controls=[

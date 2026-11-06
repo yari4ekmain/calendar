@@ -77,7 +77,9 @@ class CreateCalendarDayToDay(ft.Container):
         self.alignment = ft.Alignment.TOP_CENTER
         if path=='/generait':
             data = self.generator._generetor(self.inform_start)
-        else: data = self.generator._open(path)
+        else: 
+            self.logger.info(f"open: {path}")
+            data = self.generator._open(path)
         self.CreateCalendarList = CreateCalendarList(data)
         self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
 
@@ -126,3 +128,5 @@ class CreateCalendarDayToDay(ft.Container):
         await self.inform("/home")
     async def _undo(self, e):
         await self.inform("/home")
+
+

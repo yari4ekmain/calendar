@@ -1,13 +1,39 @@
 import flet as ft
 import typing
+import logging
 from api.tools import Tools
+from api.backend import today
+
+
+class CastomTopBar(ft.Row):
+    def __init__(self,inf):
+        super().__init__()
+        self.inf = inf
+        self.lg = logging.getLogger(f"{__name__}.CreateTopBar")
+        self.lg.info("INIT")
+        self.alignment = ft.MainAxisAlignment.SPACE_BETWEEN
+    def Render(
+            self,
+            today: list[int] = today(),
+            name: str = None              
+            ):
+        self.t = today
+        self.controls = [
+            ft.Row([
+            CastomButton(text="Назад", padding=5,size = 15,on_click=self._exit),
+            ft.Text(f"Нaзвание:  {name}",size=20,weight=ft.FontWeight.BOLD)
+            ]),
+            ft.Text(f"Дата:  {self.t[2]}:{self.t[1]}:{self.t[0]}",size=15)
+        ]
+    async def _exit(self):
+        await self.inf("/home")
 
 class CastomButton(ft.Container):
     def __init__(
         self,
         text: str | None = None,
-        size: int = 10,
-        padding: int | None = None,
+        size: int = 15,
+        padding: int = 5,
         bgcolor: str | None = None,
         color: str | None = None,
         border_radius: int | None = None,
@@ -62,8 +88,6 @@ class CastomButton(ft.Container):
         e.control.on_click = self._click_on
         e.control.data = 'off'
 
-
-
 class CastomLanDay(ft.Stack):
     def __init__(self):
         super().__init__()
@@ -111,3 +135,6 @@ class CastomColorExplanation(ft.Column):
         self.controls.clear()
         self.Render(events)
         self.update()
+
+
+

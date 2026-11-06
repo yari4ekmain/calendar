@@ -44,7 +44,8 @@ START_SETTING = {
     "language":'ru',
     "save_pach":f'{os.getcwd()}',
     "calendars": [],
-    "tam":"black"
+    "tam":"black",
+    "love_calendar_path":None
 }
 
 SETTING = {}
@@ -52,12 +53,14 @@ SETTING = {}
 class Tools():
     def __init__(self):
         super().__init__()
-
-
+        lg.dictConfig(LOGGING_CONFIG)
+        self.lg = logging.getLogger(f"{__name__}.Tools")
+    def love_calendar(self):
+        return SETTING.get('love_calendar_path',None)
 
     def StartApp(self):
         global SETTING
-        lg.dictConfig(LOGGING_CONFIG)
+        
         try:
             with open('setting.json', 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -72,11 +75,24 @@ class Tools():
         if not os.path.isdir(SETTING["save_pach"]+"/data"):
             os.mkdir(SETTING["save_pach"]+"/data")
         return SETTING
+    def _seve_setting(self):
+        try:
+            with open('setting.json', 'w', encoding='utf-8') as f:
+                json.dump(SETTING,f,indent=2)  
+                return True     
+        except json.JSONDecodeError:
+            self.lg.warning("DONT SAVE SETTING")
+            return False
+    def _update_setting(self,kay,value):
+        if SETTING.get(kay,'')!='':
+            SETTING[kay]=value
+            return self._seve_setting()
+        return False
     def ReturnCalendarsData(self):
         data_pash = SETTING["save_pach"]+"/data"
         lis = os.listdir(data_pash)
         if len(lis)==0:
-            logging.info("ReturnCalendarsData: NOT CALENDAR")
+            self.lg.info("ReturnCalendarsData: NOT CALENDAR")
             return []
         reqvest = []
         for calendar in lis:
@@ -89,9 +105,17 @@ class Tools():
                 path = f"{data_pash}/{calendar}"
                 reqvest.append([name,old,events,path])
             except KeyError as e:
-                logging.error(f"ReturnCalendarsData: {e}")
+                self.lg.error(f"ReturnCalendarsData: {e}")
         return reqvest
-    
+    def returnSETTING(self):
+        return SETTING
+    def _valid_save_path(self,path: str):
+        if os.path.exists(path):
+            return True
+        else:
+            self.lg.warning(f"NOT FOLDER: {path}")
+            return False
+        
     def SortEvent(self,events):
         '''-> end_minutes-start_minutes,event,start_minutes,end_minutes '''
         sort_len_list = []
@@ -112,3 +136,4 @@ class Tools():
             sort_len_list.append([end_minutes-start_minutes,event,start_minutes,end_minutes])
             sort_len_list = sorted(sort_len_list, key=lambda x: x[0], reverse=True)
         return sort_len_list
+

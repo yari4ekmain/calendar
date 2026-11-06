@@ -1,6 +1,36 @@
 import json 
 import datetime
 import logging
+
+
+class ImportGenerator():
+    def __init__(self):
+        super().__init__()
+    def json_imp(self,data):
+        None
+    def html_imp(self,data):
+        None
+    def csv_imp(self,data):
+        None    
+    def ics_imp(self,data):
+        None    
+    def xlsx_imp(self,data):
+        None
+class ExportGenerator():
+    def __init__(self):
+        super().__init__()
+    def json_exp(self,data):
+        None
+    def html_exp(self,data):
+        None
+    def csv_exp(self,data):
+        None    
+    def ics_exp(self,data):
+        None    
+    def xlsx_exp(self,data):
+        None
+
+
 class Generator():
     def __init__(self):
         super().__init__()
@@ -12,7 +42,7 @@ class Generator():
     def _vesocos(self):
         return (self.old%100!=0 and self.old%4==0)
 
-    def _open(self,path):
+    def _open(self,path: str):
         with open(path,"r") as f:
             self.data = json.load(f)
             self.old = self.data["old"]
@@ -101,6 +131,9 @@ class Generator():
             json.dump(self.data,f,indent=2)
         return self.data
 
+    def _getEvent(self,mes: int,day: int) -> list:
+            return self.data[f"{mes}"][day-1]["events"]
+
 VALUECONTRAST = 50
 def average_hex_color(hex1: str, hex2: str) -> str:
     """
@@ -128,6 +161,12 @@ def average_hex_color(hex1: str, hex2: str) -> str:
     avg_b = (b1 + b2) / 2
 
     return rgb_to_hex(avg_r, avg_g, avg_b)
+
+
+def today():
+    data = datetime.date.today()
+    y, m, d = map(int,str(data).split('-'))
+    return [y,m,d]
 
 # g = Generator()
 # event_1 = {
