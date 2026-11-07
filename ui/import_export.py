@@ -8,23 +8,25 @@ LEN_FORMAT = [".JSON",".IMG",".CSV",".HTML",".XLSX"]
 class Import(ft.Container):
     def __init__(self,cache,inform):
         super().__init__()
-        self.format_imp_row = ft.Row([CastomButton(f"{LEN_FORMAT[x]}",on_click=self._valid,data =x) for x in LEN_FORMAT])
-
+        None
     def _valid(self,e):
         None
 
 class Export(ft.Container):
     def __init__(self,cache,inform):
         super().__init__()
-        self.format_exp_row = ft.Row([CastomButton(f"{LEN_FORMAT[x]}",on_click=self._valid,data =x) for x in LEN_FORMAT])
-
+        labal = ft.Text("Выберите формат")
+        self.format_exp_row = ft.Row([CastomButton(x,on_click=self._valid,data =x) for x in LEN_FORMAT],alignment=ft.MainAxisAlignment.CENTER)
+        self.exit = CastomButton("Назад",expand=True)
+        self.column = ft.Column([labal,self.format_exp_row,self.exit])
+        self.content= self.format_exp_row
     def _valid(self,e):
         None
 
 class ChoiceCalendar(ft.Container):
     def __init__(self, cache,inform):
         super().__init__()
-        # ======ВРЕМЕННО
+        self.cache = cache
         calendars = Tools().ReturnCalendarsData()
 
         self.lg=lg.getLogger(f"{__name__}.ChoiceCalendar")
@@ -43,7 +45,8 @@ class ChoiceCalendar(ft.Container):
         self.content = self.column
     async def _aplay(self,e):
         self.lg.info(f"APLAY {self.keygrup}")
-        await self.inform()
+        self.cache._add_value('export',self.keygrup)
+        await self.inform('/export')
     def _change(self, e):
         self.lg.info(f"CHANGE {e.control.value}")
         self.keygrup = e.control.value

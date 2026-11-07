@@ -28,6 +28,7 @@ class Home(ft.Container):
         self.addcalendar = CastomButton(text = 'Создать календарь',size=15,padding=5,border_radius=3,on_click=self._create)
         self.my_calendar = CastomButton(text = 'Мои календари',size=15,padding=5,border_radius=3,on_click=self._my_calendr)
         self.setting = CastomButton(text = 'Настройки',size=15,padding=5,border_radius=3,on_click=self._setting)
+        self.export = CastomButton(text = 'Настройки',size=15,padding=5,border_radius=3,on_click=self._export)
         self.row_button = ft.Row([self.addcalendar,self.my_calendar,self.setting],alignment=ft.MainAxisAlignment.CENTER,expand=True)
         self.content = ft.Column([self.home_calendar,self.row_button],expand=True)
         self.lg.info('INIT HOME')
@@ -37,3 +38,5 @@ class Home(ft.Container):
         await self.inf('/my_calendar')
     async def _setting(self,e):
         await self.inf("/setting")
+    async def _export(self,e):
+        await self.inf("/export")

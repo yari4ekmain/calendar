@@ -67,21 +67,22 @@ class CreateCalendarDayToDay(ft.Container):
     def __init__(
             self,
             cache, 
-            inform,
-            path = '/generait'):
+            inform):
         
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarDayToDay")
         self.generator = Generator()
         global STARTDATA
+        self.cache = cache
         self.inform = inform
         self.inform_start = STARTDATA
         self.alignment = ft.Alignment.TOP_CENTER
-        if path=='/generait':
+        if self.cache._export('edit')==None:
             data = self.generator._generetor(self.inform_start)
         else: 
-            self.logger.info(f"open: {path}")
-            data = self.generator._open(path)
+            self.logger.info(f"open: {self.cache._export('edit')}")
+            data = self.generator._open(self.cache._export('edit'))
+            self.cache._remuve('open')
         self.CreateCalendarList = CreateCalendarList(data)
         self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
 

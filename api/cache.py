@@ -10,6 +10,9 @@ class Cache():
     def _export(self,kay):
         return self.data.get(kay,None)
     def _remuve(self, kay):
-        self.data.pop(kay)
-
+        try:
+            self.data.pop(kay)
+            return True
+        except: 
+            return False
         

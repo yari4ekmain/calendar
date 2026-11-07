@@ -55,12 +55,12 @@ class MyCalendar(ft.Container):
             )
             self.content = ft.Column([self.top_bar,self.PanelList])
     async def _open(self, e):
-        # закешировать №315
-        self.cache._add_value()
-        await self.inform('/open', e.control.data)
+        self.cache._add_value('open',e.control.data)
+        await self.inform('/open')
         self.logger.info(e.control.data)
     async def _edit(self, e):
-        await self.editdef(e.control.data)
+        self.cache._add_value('edit',e.control.data)
+        await self.inform("/create_colendar_day_to_day")
     def _love(self, e):
         if self.tools._update_setting("love_calendar_path",e.control.data):
             None

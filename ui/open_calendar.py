@@ -9,14 +9,14 @@ class OpenCalendar(ft.Container):
     def __init__(self,
                  cache, 
                  inf,
-                 path_calendar,
                  generator = Generator()):
         self.lg=logging.getLogger(f"{__name__}.OpenCalendar")
         self.lg.info("START INIT OpenCalendar")
         self.inf = inf
+        self.cache = cache
         super().__init__()
         self.generator = generator
-        self.calendar = self.generator._open(path_calendar)
+        self.calendar = self.generator._open(self.cache._export("open"))
         self.today = today()
         self.castomdayevent = CastomLanDay()
         self.castomcolors = CastomColorExplanation()    
