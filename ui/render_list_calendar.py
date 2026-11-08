@@ -97,6 +97,7 @@ class CreateCalendarList(ft.Container):
                 for event in day["events"][1:]:
                     color = average_hex_color(event["event_color"],color)
             elif len(day["events"])==1:
+                self.lg.info(f"day: {day}")
                 color = day["events"][0]["event_color"]
             x = ft.DataCell(ft.Container(ft.Text(day["day"],color=color),on_click=self.TESTdata,data=day,expand=True))
             dataNed.append(x)   
@@ -341,9 +342,16 @@ class CreateEvent(ft.Container):
         e.control.bgcolor = None
         e.control.on_click = self._click_on
         e.control.data = 'off'
-
+    def _weekday_event(self):
+        self.list_day = []
+        for day in self.button_day.controls:
+            if day.data == 'on':
+                self.list_day.append(1)
+            else: self.list_day.append(0)
+        return self.list_day
     def _apllay(self, e):
         if self._valid():
+            
             event = {
                 "event_name":self.label_event.value,
                 "event_color":self.color_event.color,
@@ -351,8 +359,18 @@ class CreateEvent(ft.Container):
                 "end_time":(str(self.texttime.controls[1].value).replace(" ",'').replace('-','') if self.texttime.controls[1].value!=None else '')
                      }
             if self.type_event.selected_index==0:
+                
+                event["type_and_data"] = [0,self.daywork_event.value,self.daychill_event.value,self.sgvig.value]
+                self.lg.info(f"AddEvent: event: {event} type event:0")
                 self.addevent(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
-            else: self.addeventweekday(self.button_day.controls,event)
+                
+            else: 
+                
+                self._weekday_event()
+                event["type_and_data"] = [1,self.list_day]
+                self.lg.info(f"AddEvent: event: {event} type event:1")
+                self.addeventweekday(self.list_day,event)
+                
 
 class CreateNullCalendar(ft.Container):
     def __init__(self):

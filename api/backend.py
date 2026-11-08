@@ -6,29 +6,78 @@ import logging
 class ImportGenerator():
     def __init__(self):
         super().__init__()
-    def json_imp(self,data):
+    def json_imp(self,path: str):
         None
-    def html_imp(self,data):
+    def html_imp(self,path: str):
         None
-    def csv_imp(self,data):
+    def csv_imp(self,path: str):
         None    
-    def ics_imp(self,data):
+    def ics_imp(self,path: str):
         None    
-    def xlsx_imp(self,data):
+    def xlsx_imp(self,path: str):
         None
-class ExportGenerator():
+class FormatTranslated():
     def __init__(self):
         super().__init__()
-    def json_exp(self,data):
+        self.generator = Generator()
+
+        self.HTMLSTART = '''
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>КАЛЕНДАРЬ</title>
+                <style>
+                    td {background-color: #a3f5a0;}
+                    h1 {margin: 0 10px ;}
+                    h2 {text-align: left;margin-left: 3px;}
+                    .v4_31 {background-color: rgb(255, 255, 255);}
+                    .v6_31 {background-color: rgb(255, 255, 255);}
+                    .v9_31 {background-color: rgb(255, 255, 255);}
+                    .v11_31 {background-color: rgb(255, 255, 255);}
+                    .v12_31 {background-color: rgb(212, 130, 171);}
+                    .v12_30 {background-color: rgb(255, 180, 180);}
+                    table {color: black;}
+                    .v1_1::after { content: "(конец)"; text-size-adjust: 10px; }
+                </style>
+            </head>
+            <body>
+                <table>
+                    <thear>
+                        <th><h1>Январь</h1></th>
+                        <th><h1>Февраль</h1></th>
+                        <th><h1>Март</h1></th>
+                        <th><h1>Апрель</h1></th>
+                        <th><h1>Май</h1></th>
+                        <th><h1>Июнь</h1></th>
+                        <th><h1>Июль</h1></th>
+                        <th><h1>Август</h1></th>
+                        <th><h1>Сентябрь</h1></th>
+                        <th><h1>Октябрь</h1></th>
+                        <th><h1>Ноябрь</h1></th>
+                        <th><h1>Декабрь</h1></th>
+                    </thear>
+            '''
+    
+    def _json(self,path: str):
         None
-    def html_exp(self,data):
-        None
-    def csv_exp(self,data):
+    def json_in_html(self,path: str):
+        data = self.generator._open(path)
+        for event in data["events"]:
+            None # потом
+    def json_in_csv(self,path: str):
+        data = self.generator._open(path)
+        for mesx in range(1,13):
+            mes = data[f"{mesx}"]
+            
+    def json_in_ics(self,path: str):
         None    
-    def ics_exp(self,data):
-        None    
-    def xlsx_exp(self,data):
+    def json_in_xlsx(self,path: str):
         None
+
+
+
 
 
 class Generator():
@@ -107,14 +156,17 @@ class Generator():
         self._seve("")
         return self.data
 
-    def _addEventWeekday(self,dayx, event):
-        self.data["events"].append(event)
+    def _addEventWeekdays(self,days:list = [0,0,0,0,0,0,0], event = {}):
+        allevent = dict(event)
+        self.data["events"].append(allevent)
+
+        event.pop("type_and_data")
         for mes in range(1,12 +1):
             _mes_data = self.data[f"{mes}"]
             for day in _mes_data:
-                self.logger.info(f"Generanor ADDEVENT WEEKDAY dayx: {dayx}, daydata: {day["weekday"]}")
-                if int(day["weekday"])==int(dayx):
-                     
+                if days[int(day["weekday"])]==1:
+                    self.logger.info(f"WEEKDAYEVENTADD: {event}")
+                    
                     day["events"].append(event)
         return self.data
     
@@ -185,4 +237,7 @@ def today():
 # g._addEvents(3,3,0,event_1)
 # g._addEventWeekday(6,event_2)
 # g._addEventWeekday(0,event_2)
+# for x in range(0,1002):
+#     g._addEvents(1,1,0,event=event_2["event_name"]+f'{x}')
+#     print('test')
 # g._seve('data/dataTEST.json')

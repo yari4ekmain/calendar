@@ -16,7 +16,7 @@ class OpenCalendar(ft.Container):
         self.cache = cache
         super().__init__()
         self.generator = generator
-        self.calendar = self.generator._open(self.cache._export("open"))
+        self.calendar = self.generator._open(self.cache._export('open'))
         self.today = today()
         self.castomdayevent = CastomLanDay()
         self.castomcolors = CastomColorExplanation()    

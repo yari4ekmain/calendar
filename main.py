@@ -47,7 +47,6 @@ async def main(page: ft.Page):
     page.on_route_change = route_change
     logging.info('MAIN START')
     await page.push_route("/home")
-    # await page.push_route("/choice_calendar")
     page.window.height = 700
     page.window.width = 1500
     page.update()

@@ -3,13 +3,13 @@ from ui.render_list_calendar import CreateCalendarList, CreateEventList,CreateEv
 from ui.style import CastomButton
 from api.backend import Generator
 import logging
-STARTDATA = []
 class CreateCalendarStart(ft.Row):
     def __init__(
             self,
             cache, 
             inform):
         super().__init__()
+        self.cache = cache
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarStart")
         self.inform = inform
         self.error = ft.Text("",color="#ff5e5e")
@@ -56,8 +56,7 @@ class CreateCalendarStart(ft.Row):
 
     async def _aplay(self, e):
         if self._valid:
-            global STARTDATA
-            STARTDATA=[self.input_name.value,self.input_god.value]
+            self.cache._add_value('start_data',[self.input_name.value,self.input_god.value])
             await self.inform('/create_colendar_day_to_day')         
 
     async def _undo(self, e):
@@ -72,10 +71,9 @@ class CreateCalendarDayToDay(ft.Container):
         super().__init__()
         self.logger = logging.getLogger(f"{__name__}.CreateCalendarDayToDay")
         self.generator = Generator()
-        global STARTDATA
         self.cache = cache
         self.inform = inform
-        self.inform_start = STARTDATA
+        self.inform_start = self.cache._export('start_data')
         self.alignment = ft.Alignment.TOP_CENTER
         if self.cache._export('edit')==None:
             data = self.generator._generetor(self.inform_start)
@@ -105,15 +103,9 @@ class CreateCalendarDayToDay(ft.Container):
             self.logger.info(f"CreateCalendarDayToDay: CREATE (work: {work}, chill: {chill}, sdvig: {sdvig})")
         except Exception as e:
             self.logger.error(f"_addEvent: {e}")
-    def _addeventweekdayx(self, workday:list = [], event={}):
-        x=0
-        data = None
-        for day in workday:
-            if day.data == 'on':
-                data = self.generator._addEventWeekday(x,event)
-                
-                self.logger.info(f"CreateCalendarDayToDay: CREATE (weekday: {x} day.data: {day.data})")
-            x+=1
+    def _addeventweekdayx(self, workdays:list = [], event={}):
+        data = self.generator._addEventWeekdays(workdays,event)     
+        self.logger.info(f"CreateCalendarDayToDay: CREATE (weekday: {workdays})")
         self._update(data)
              
     def _update(self, data):

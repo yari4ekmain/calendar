@@ -1,5 +1,5 @@
 import flet as ft
-from api.backend import ImportGenerator, ExportGenerator
+from api.backend import ImportGenerator
 from api.tools import Tools
 import logging as lg
 from ui.style import CastomButton
@@ -19,7 +19,7 @@ class Export(ft.Container):
         self.format_exp_row = ft.Row([CastomButton(x,on_click=self._valid,data =x) for x in LEN_FORMAT],alignment=ft.MainAxisAlignment.CENTER)
         self.exit = CastomButton("Назад",expand=True)
         self.column = ft.Column([labal,self.format_exp_row,self.exit])
-        self.content= self.format_exp_row
+        self.content= self.column
     def _valid(self,e):
         None
 
