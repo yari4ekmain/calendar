@@ -4,7 +4,7 @@ from flet_color_pickers import BlockPicker
 from ui.style import CastomButton
 import datetime
 import logging as lg
-
+import uuid
 COLORS = [
     "#f44336",  # Красный
     "#e91e63",  # Розовый
@@ -351,12 +351,15 @@ class CreateEvent(ft.Container):
         return self.list_day
     def _apllay(self, e):
         if self._valid():
-            
+            self.uuid = str(uuid.uuid4())
             event = {
+                "uuid":self.uuid,
                 "event_name":self.label_event.value,
                 "event_color":self.color_event.color,
                 "start_time":(str(self.texttime.controls[0].value).replace(' ','') if self.texttime.controls[0].value != None else ''),
-                "end_time":(str(self.texttime.controls[1].value).replace(" ",'').replace('-','') if self.texttime.controls[1].value!=None else '')
+                "end_time":(str(self.texttime.controls[1].value).replace(" ",'').replace('-','') if self.texttime.controls[1].value!=None else ''),
+                "date_create":datetime.datetime.isoformat(datetime.datetime.now()),
+                "date_edit":None
                      }
             if self.type_event.selected_index==0:
                 

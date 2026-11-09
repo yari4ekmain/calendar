@@ -55,7 +55,7 @@ class CreateCalendarStart(ft.Row):
         return flag
 
     async def _aplay(self, e):
-        if self._valid:
+        if self._valid(None):
             self.cache._add_value('start_data',[self.input_name.value,self.input_god.value])
             await self.inform('/create_colendar_day_to_day')         
 

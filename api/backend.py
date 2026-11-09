@@ -3,78 +3,6 @@ import datetime
 import logging
 
 
-class ImportGenerator():
-    def __init__(self):
-        super().__init__()
-    def json_imp(self,path: str):
-        None
-    def html_imp(self,path: str):
-        None
-    def csv_imp(self,path: str):
-        None    
-    def ics_imp(self,path: str):
-        None    
-    def xlsx_imp(self,path: str):
-        None
-class FormatTranslated():
-    def __init__(self):
-        super().__init__()
-        self.generator = Generator()
-
-        self.HTMLSTART = '''
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>КАЛЕНДАРЬ</title>
-                <style>
-                    td {background-color: #a3f5a0;}
-                    h1 {margin: 0 10px ;}
-                    h2 {text-align: left;margin-left: 3px;}
-                    .v4_31 {background-color: rgb(255, 255, 255);}
-                    .v6_31 {background-color: rgb(255, 255, 255);}
-                    .v9_31 {background-color: rgb(255, 255, 255);}
-                    .v11_31 {background-color: rgb(255, 255, 255);}
-                    .v12_31 {background-color: rgb(212, 130, 171);}
-                    .v12_30 {background-color: rgb(255, 180, 180);}
-                    table {color: black;}
-                    .v1_1::after { content: "(конец)"; text-size-adjust: 10px; }
-                </style>
-            </head>
-            <body>
-                <table>
-                    <thear>
-                        <th><h1>Январь</h1></th>
-                        <th><h1>Февраль</h1></th>
-                        <th><h1>Март</h1></th>
-                        <th><h1>Апрель</h1></th>
-                        <th><h1>Май</h1></th>
-                        <th><h1>Июнь</h1></th>
-                        <th><h1>Июль</h1></th>
-                        <th><h1>Август</h1></th>
-                        <th><h1>Сентябрь</h1></th>
-                        <th><h1>Октябрь</h1></th>
-                        <th><h1>Ноябрь</h1></th>
-                        <th><h1>Декабрь</h1></th>
-                    </thear>
-            '''
-    
-    def _json(self,path: str):
-        None
-    def json_in_html(self,path: str):
-        data = self.generator._open(path)
-        for event in data["events"]:
-            None # потом
-    def json_in_csv(self,path: str):
-        data = self.generator._open(path)
-        for mesx in range(1,13):
-            mes = data[f"{mesx}"]
-            
-    def json_in_ics(self,path: str):
-        None    
-    def json_in_xlsx(self,path: str):
-        None
 
 
 
@@ -92,7 +20,7 @@ class Generator():
         return (self.old%100!=0 and self.old%4==0)
 
     def _open(self,path: str):
-        with open(path,"r") as f:
+        with open(path,"r",encoding="utf-8") as f:
             self.data = json.load(f)
             self.old = self.data["old"]
         return self.data
@@ -128,7 +56,9 @@ class Generator():
             self.data[f"{mes}"]=_mes_data
         return self.data
     def _addEvents(self, work: int,chill: int,sdvig: int,event):
-        self.data["events"].append(event)
+        allevent = dict(event)
+        self.data["events"].append(allevent)
+        event.pop("type_and_data")
         caunt = sdvig 
         flag = False
         for mes in range(1,12 +1):
@@ -152,6 +82,9 @@ class Generator():
         
     def _addEvent(self, dataevent, event):
         """dataevent = [mes, day] mes -- int, day -- int"""
+        allevent = dict(event)
+        self.data["events"].append(allevent)
+        event.pop("type_and_data")
         self.data[f'{dataevent[0]}'][dataevent[1]-1]["events"].append(event)
         self._seve("")
         return self.data
@@ -172,10 +105,13 @@ class Generator():
     
     def _remuveEvent(self,event):
         self.data["events"].remove(event)
+        uuid = event["uuid"]
         for mes in range(1,13):
             for day in self.data[f"{mes}"]:
-                if day['events'].count(event):
-                    (day["events"]).remove(event)
+                if len(day['events'])>0:
+                    for event_in_day in day["events"]:
+                        if event["uuid"]==uuid:
+                            (day["events"]).remove(event_in_day)
         return self.data
 
     def _seve(self,pathname):
