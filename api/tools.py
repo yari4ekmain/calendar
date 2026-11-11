@@ -4,7 +4,7 @@ import logging.config as lg
 import logging
 import os
 CLASS_NAME = 'Tools'
-VERSION = '1.1.1.1'
+VERSION = '1.0.0.0'
 NAMEAPP = "CALENDAR"
 
 LOGGING_CONFIG = {
@@ -12,10 +12,9 @@ LOGGING_CONFIG = {
     "disable_existing_loggers": False,
     "formatters": {
         "detailed": {
-            # Ключевые поля для понимания "откуда упало":
             "format": "[%(asctime)s] %(levelname)s "
-                      "| %(name)s "          # полное имя логгера (модуль.Класс)
-                      "| %(module)s:%(funcName)s:%(lineno)d "  # файл, функция, строка
+                      "| %(name)s "         
+                      "| %(module)s:%(funcName)s:%(lineno)d "  
                       "| %(message)s"
         }
     },
@@ -31,7 +30,7 @@ LOGGING_CONFIG = {
             "maxBytes": 10_000_000,
             "backupCount": 1,
             "formatter": "detailed",
-            "level": "DEBUG",  # в файл можно писать всё, в консоль — только важное
+            "level": "DEBUG", 
         },
     },
     "root": {

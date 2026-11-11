@@ -2,7 +2,7 @@ import flet as ft
 from api.tools import Tools
 from ui.style import CastomButton
 import logging
-from api.backend import Generator
+from api.calendarcore import Generator
 
 class MyCalendar(ft.Container):
     def __init__(self,cache, inform):
@@ -60,7 +60,7 @@ class MyCalendar(ft.Container):
         self.logger.info(e.control.data)
     async def _edit(self, e):
         self.cache._add_value('edit',e.control.data)
-        await self.inform("/create_colendar_day_to_day")
+        await self.inform("/create_colendar_and_edit")
     def _love(self, e):
         if self.tools._update_setting("love_calendar_path",e.control.data):
             None

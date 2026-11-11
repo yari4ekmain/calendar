@@ -1,7 +1,7 @@
 import flet as ft
 from ui.render_list_calendar import CreateCalendarList, CreateEventList,CreateEvent
 from ui.style import CastomButton
-from api.backend import Generator
+from api.calendarcore import Generator
 import logging
 class CreateCalendarStart(ft.Row):
     def __init__(
@@ -57,12 +57,12 @@ class CreateCalendarStart(ft.Row):
     async def _aplay(self, e):
         if self._valid(None):
             self.cache._add_value('start_data',[self.input_name.value,self.input_god.value])
-            await self.inform('/create_colendar_day_to_day')         
+            await self.inform('/create_colendar_and_edit')         
 
     async def _undo(self, e):
         await self.inform("/home")
     
-class CreateCalendarDayToDay(ft.Container):
+class CreateOrEditCalendar(ft.Container):
     def __init__(
             self,
             cache, 
@@ -80,19 +80,21 @@ class CreateCalendarDayToDay(ft.Container):
         else: 
             self.logger.info(f"open: {self.cache._export('edit')}")
             data = self.generator._open(self.cache._export('edit'))
-            self.cache._remuve('open')
-        self.CreateCalendarList = CreateCalendarList(data)
+            self.cache._remuve('edit')
+        self.cache._add_value("is_read",False)
+        self.CreateCalendarList = CreateCalendarList(self.cache,data)
         self.panel_list = CreateEventList(self.generator,self.CreateCalendarList)    
-
+        self.panel_list.RenderPaner(data)
         self.column = ft.Column([
             self.panel_list 
             ],horizontal_alignment=ft.CrossAxisAlignment.START,alignment=ft.MainAxisAlignment.START,scroll=ft.ScrollMode.AUTO)
         self.aplay = ft.TextButton(content="Сохранить",on_click=self._aplay)
         self.undo = ft.TextButton(content="Отменить",on_click=self._undo)
         self.row_button = ft.Row([self.undo,self.aplay])
+        self.cache._add_value("old",int(data["old"]))
         self.content = (ft.Column([
                 ft.Row([ft.Container(self.column,bgcolor="#242424",width=400,height=300),ft.Column([self.row_button,self.CreateCalendarList],expand=True)]),
-                ft.Row([CreateEvent(self._addevent,self._addeventweekdayx)],expand=True)],
+                ft.Row([CreateEvent(self.cache,self._addevent,self._addeventweekdayx,self._addeventone)],expand=True)],
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN))
         self.logger.info("CreateCalendarDayToDay: init")
         
@@ -107,7 +109,12 @@ class CreateCalendarDayToDay(ft.Container):
         data = self.generator._addEventWeekdays(workdays,event)     
         self.logger.info(f"CreateCalendarDayToDay: CREATE (weekday: {workdays})")
         self._update(data)
-             
+
+    def _addeventone(self, date:str = "2026-12-31", event={}):
+        data = self.generator._addEvent(date.split('-'),event)     
+        self.logger.info(f"CreateCalendarDayToDay: CREATE (weekday: {date})")
+        self._update(data)
+
     def _update(self, data):
         self.logger.info("CreateCalendarDayToDay: UPDATE")
         self.panel_list.RenderPaner(data)

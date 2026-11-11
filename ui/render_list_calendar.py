@@ -1,5 +1,5 @@
 import flet as ft
-from api.backend import average_hex_color
+from api.calendarcore import average_hex_color
 from flet_color_pickers import BlockPicker
 from ui.style import CastomButton
 import datetime
@@ -29,8 +29,10 @@ SIZEBUTTONDAY = 50
 class CreateCalendarList(ft.Container):
     def __init__(
             self,
+            cache,
             calendar = None,
-            reqvest = None):
+            reqvest = None, expand = True,height = None,width = None):
+        self.cache = cache
         self.reqvest = reqvest
         super().__init__()
         self.DATARENDER = 1
@@ -42,12 +44,15 @@ class CreateCalendarList(ft.Container):
         self.NextButton = ft.TextButton('Next',on_click=self.render_next)
         self.ReversButton = ft.TextButton('Revers',on_click=self.render_revers)
         self.lg = lg.getLogger(f"{__name__}.CreateCalendarList")
-        self.expand = True
+        self.expand = expand
+        self.height = height
+        self.width = width
         self.RenderListCalendar()
 
     def TESTdata(self, e):
-        self.lg.info(f"on_click in {e.control.data}")
-        self.reqvest(e.control.data)
+        if self.cache._export("is_read")==True:
+            self.lg.info(f"on_click in {e.control.data}")
+            self.reqvest(e.control.data)
     def render_next(self,e):
         self.lg.info(f"RESNDER LIST {self.DATARENDER}")
         if self.DATARENDER>=12:
@@ -73,7 +78,8 @@ class CreateCalendarList(ft.Container):
                 ft.DataColumn(ft.Text("Пт")),
                 ft.DataColumn(ft.Text("Сб")),
                 ft.DataColumn(ft.Text("Вс",color="#8f0101"))],
-                expand=True
+                expand=self.expand,
+                width=self.width
         )
         dayMes = 0
         dataNed = []
@@ -148,13 +154,8 @@ class CreateEventList(ft.ExpansionPanelList):
         
         if data==None:
             self.controls.append(ft.ExpansionPanel(
-                header=ft.ListTile(title=ft.Text(f"Panel {i}")),
-                content=ft.ListTile(
-                    title=ft.Text(f"Событие 00"),
-                    subtitle=ft.Text(f"Press the icon to delete panel "),
-                    trailing=ft.IconButton(
-                        icon=ft.Icons.DELETE
-                    ),),))
+                header=ft.ListTile(title=ft.Text(f"Нет событий")),
+                ))
             
             return 0 
         for event in data["events"]:
@@ -167,7 +168,7 @@ class CreateEventList(ft.ExpansionPanelList):
                 content=ft.ListTile(
                     bgcolor=color,
                     title=ft.Text(f"Событие {event['event_name']}"),
-                    subtitle=ft.Text(f"Press the icon to delete panel {i}"),
+                    subtitle=ft.Text(f"Нажмите на иконку что бы удалить событие {i}"),
                     trailing=ft.IconButton(
                         icon=ft.Icons.DELETE,
                         on_click=self._remuveEvent,
@@ -176,12 +177,15 @@ class CreateEventList(ft.ExpansionPanelList):
         self.lg.info("RenderPaner: RENDER")
 
 class CreateEvent(ft.Container):
-    def __init__(self,addevent, addeventweekday):
+    def __init__(self,cache,addevent, addeventweekday, addeventone):
         super().__init__()
         self.lg = lg.getLogger(f"{__name__}.CreateEvent")
         self.addevent = addevent
+        self.cache = cache
+        self.addeventone = addeventone
         self.addeventweekday = addeventweekday
         self.label_event = ft.TextField('Название',width=470)
+        
         self.expand = True
         self.color_event = BlockPicker(
                 color="#9c27b0",
@@ -193,7 +197,8 @@ class CreateEvent(ft.Container):
             on_change=self._type_event,
             controls=[
                 ft.Text('Дней через дней'),
-                ft.Text("По дням недели")
+                ft.Text("По дням недели"),
+                ft.Text("Одиночное")
             ])
         self.daywork_event = ft.TextField(label='Рабочии дни',width=150)
         self.daychill_event = ft.TextField(label="Выходные",width=150)
@@ -230,9 +235,20 @@ class CreateEvent(ft.Container):
             CastomButton('СБ',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
             CastomButton('ВС',size=15,padding=2,width=SIZEBUTTONDAY,height=SIZEBUTTONDAY,border_radius=3,on_click=self._click_on,sticking=True),
         ],width=470,height=self.daywork_event.height,alignment=ft.MainAxisAlignment.SPACE_AROUND)
+        self.datepicker = ft.DatePicker(
+            error_format_text="Не соответствует формат",
+            first_date=datetime.datetime(year=self.cache._export('old'),month=1,day=1),
+            value=datetime.datetime(year=self.cache._export('old'),month=1,day=1),
+            last_date=datetime.datetime(self.cache._export('old'),12,31),
+            help_text="Выберите дату события",
+            on_change=self._date_onle_update
+        )
+        self.text_datepicker = ft.Text('')
+        self.button_datepicker = ft.TextButton("Выбрать дату",on_click=lambda:self.page.show_dialog(self.datepicker))
+        self.row_onle_date = ft.Row([self.button_datepicker,self.text_datepicker])
         self.button_timeend_event = ft.TextButton('Время конца',on_click=lambda : self.page.show_dialog(self.timeend_event))
         self.button_timestart_event = ft.TextButton("время начала",on_click=lambda : self.page.show_dialog(self.timestart_event))
-        self.chekbox_chillday = ft.Checkbox('Отметить выходные')
+        self.description_event = ft.TextField(label="Описание (необезательно):",multiline=True)
         self.type_event_data = ft.Row([self.button_day])
         self.Button_remuvetime = ft.IconButton(icon=ft.Icons.REMOVE_CIRCLE_OUTLINE,disabled=True,icon_color="#800000",disabled_color="#313131",on_click=self._remuvetime)
         self.texttime = ft.Row([ft.Text("  "), ft.Text("  "),self.Button_remuvetime], alignment=ft.MainAxisAlignment.SPACE_BETWEEN,expand=True)
@@ -270,7 +286,7 @@ class CreateEvent(ft.Container):
                     border=border
                     ),
             ft.Container(ft.Column([
-                self.chekbox_chillday,
+                self.description_event,
                 self.apllay]),
                     padding=5,
                     border=border
@@ -281,9 +297,12 @@ class CreateEvent(ft.Container):
         if self.type_event.selected_index ==0:
             self.type_event_data.controls.clear()
             self.type_event_data.controls = [self.daywork_event,self.sgvig,self.daychill_event]
-        else:
+        elif self.type_event.selected_index ==1:
             self.type_event_data.controls.clear()
             self.type_event_data.controls = [self.button_day]
+        else:
+            self.type_event_data.controls.clear()
+            self.type_event_data.controls = [self.row_onle_date]            
         self.update()
 
     def _time_row(self, e):
@@ -298,6 +317,10 @@ class CreateEvent(ft.Container):
         self.texttime.controls[0].value = None
         self.texttime.controls[1].value = None
         self.Button_remuvetime.disabled = True
+        self.update()
+
+    def _date_onle_update(self, e):
+        self.text_datepicker.value = str(self.datepicker.value+datetime.timedelta(days=1)).split(' ')[0]
         self.update()
 
     def _valid(self):
@@ -323,14 +346,16 @@ class CreateEvent(ft.Container):
         if self.type_event.selected_index ==0:
             if _valid_int(self.daychill_event) and _valid_int(self.daywork_event) and _valid_int(self.sgvig):
                  flag = False
-        else:
+        elif self.type_event.selected_index ==1:
             aktive= 0
             for x in self.button_day.controls:
                 if x.data == "on":
                     aktive+=1
             if aktive==0:
                 flag = False
-
+        else:
+            if self.text_datepicker.value=='':
+                flag = False
         return flag
 
     def _click_on(self, e):
@@ -359,7 +384,8 @@ class CreateEvent(ft.Container):
                 "start_time":(str(self.texttime.controls[0].value).replace(' ','') if self.texttime.controls[0].value != None else ''),
                 "end_time":(str(self.texttime.controls[1].value).replace(" ",'').replace('-','') if self.texttime.controls[1].value!=None else ''),
                 "date_create":datetime.datetime.isoformat(datetime.datetime.now()),
-                "date_edit":None
+                "date_edit":None,# потом 
+                "description":(None if self.description_event.value in ['',None] else self.description_event.value)
                      }
             if self.type_event.selected_index==0:
                 
@@ -367,14 +393,17 @@ class CreateEvent(ft.Container):
                 self.lg.info(f"AddEvent: event: {event} type event:0")
                 self.addevent(int(self.daywork_event.value),int(self.daychill_event.value),int(self.sgvig.value),event)
                 
-            else: 
-                
+            elif self.type_event.selected_index==1: 
                 self._weekday_event()
                 event["type_and_data"] = [1,self.list_day]
                 self.lg.info(f"AddEvent: event: {event} type event:1")
                 self.addeventweekday(self.list_day,event)
+            else:
                 
-
+                event["type_and_data"] = [2,str(self.datepicker.value+datetime.timedelta(days=1)).split(' ')[0]]
+                self.lg.info(f"AddEvent: event: {event} type event:3")
+                self.addeventone(str(self.datepicker.value+datetime.timedelta(days=1)).split(' ')[0],event)                
+                
 class CreateNullCalendar(ft.Container):
     def __init__(self):
         super().__init__()

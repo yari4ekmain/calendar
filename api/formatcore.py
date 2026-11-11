@@ -2,6 +2,8 @@ import datetime
 import json
 import logging
 import os
+
+logger = logging.getLogger(f"{__name__}.FormatCore")
 KEYWEEKDAY_IN_ICS = ['MO','TU','WE','TH','FR','SA','SU']
 def date_format_in_ics(date_iso: str):
     return  date_iso.replace("-",'').replace(":",'').split('.')[0]
@@ -32,6 +34,9 @@ def date_time_in_ics(event,date_start):
         date_time = date_time_start
     return date_time
 
+def film_adaptation_isc(text:str):
+    return text.replace(',','\\,').replace(';','\\;').replace(':','\\:').replace('\\','\\\\')
+
 def json_to_ics(
         calendar = {
                 'old':int,
@@ -51,11 +56,15 @@ def json_to_ics(
         save_path:str = ''
                 ): 
     try:
-        with open(save_path,"w",encoding='utf-8') as f:
+        with open(f"{save_path}.ics","w",encoding='utf-8') as f:
             f.write('''BEGIN:VCALENDAR
     VERSION:2.0
     PRODID:-//MyCalendar//RU\n''')
             for event in calendar["events"]:
+                description = None
+                if event.get("description")!=None:
+                    description = f"\nDESCRIPTION:{film_adaptation_isc(event["description"])}"
+                
                 date_create = date_format_in_ics(event["date_create"])
                 if event['type_and_data'][0]==0:
                     for work_day in range(0,int(event['type_and_data'][2])):
@@ -65,7 +74,7 @@ def json_to_ics(
                             f'''BEGIN:VEVENT
     UID:{event["uuid"]}-{work_day}@yarik-calendar.local
     DTSTAMP:{date_create}Z
-    {date_time}
+    {date_time}{description}
     RRULE:FREQ=DAILY;INTERVAL={int(event['type_and_data'][1])+int(event['type_and_data'][2])}
     SUMMARY:{event["event_name"]}
     STATUS:CONFIRMED
@@ -83,30 +92,40 @@ def json_to_ics(
                             f'''BEGIN:VEVENT
     UID:{event["uuid"]}-{KEYWEEKDAY_IN_ICS[weekday]}@yarik-calendar.local
     DTSTAMP:{date_create}Z
-    {date_time}
+    {date_time}{description}
     RRULE:FREQ=WEEKLY;BYDAY={KEYWEEKDAY_IN_ICS[weekday]}
     SUMMARY:{event["event_name"]}
     STATUS:CONFIRMED
     END:VEVENT\n
     '''
                         )
+                
+                else:
+                    date_start = date_ics_sgvig_in_work(calendar['old'])
+                    date_time = date_time_in_ics(event,date_start)
+                    f.write(
+                        f'''BEGIN:VEVENT
+UID:{event["uuid"]}@yarik-calendar.local
+DTSTAMP:{date_create}Z
+{date_time}{description}
+SUMMARY:{event["event_name"]}
+STATUS:CONFIRMED
+END:VEVENT\n
+'''
+                    )
             
             f.write("END:VCALENDAR")
         return True
     except FileNotFoundError as e:
-        logging.info(f'NOT FOLDER: {e}')
+        logger.error(f'NOT FOLDER: {e}')
         return False
     except PermissionError as e:
-        logging.info(f'NOT Permission: {e}')
+        logger.error(f'NOT Permission: {e}')
         return False    
     except OSError as e:
-        logging.info(f'FILE SISTEM ERROR: {e}')
+        logger.error(f'FILE SISTEM ERROR: {e}')
         return False        
 
 
-# TEST
-from backend import Generator
-calendar = Generator()._open(r'E:\calendar\data\1794253838.208217.json')
-json_to_ics(calendar,'test.ics')
 
 

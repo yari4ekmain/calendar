@@ -4,10 +4,6 @@ import logging
 
 
 
-
-
-
-
 class Generator():
     def __init__(self):
         super().__init__()
@@ -80,13 +76,12 @@ class Generator():
                     caunt+=1
         return self.data
         
-    def _addEvent(self, dataevent, event):
-        """dataevent = [mes, day] mes -- int, day -- int"""
+    def _addEvent(self, dataevent = list, event = dict):
+        """dataevent = [ _, mes, day] mes -- int, day -- int"""
         allevent = dict(event)
         self.data["events"].append(allevent)
         event.pop("type_and_data")
-        self.data[f'{dataevent[0]}'][dataevent[1]-1]["events"].append(event)
-        self._seve("")
+        self.data[f'{int(dataevent[1])}'][int(dataevent[2])-1]["events"].append(event)
         return self.data
 
     def _addEventWeekdays(self,days:list = [0,0,0,0,0,0,0], event = {}):
@@ -156,24 +151,3 @@ def today():
     y, m, d = map(int,str(data).split('-'))
     return [y,m,d]
 
-# g = Generator()
-# event_1 = {
-#       "event_name": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435",
-#       "event_color": "#00ff0d",
-#       "start_time": "  ",
-#       "end_time": "  "
-#     }
-# event_2 = {
-#       "event_name": "cull",
-#       "event_color": "#8c00ff",
-#       "start_time": "  ",
-#       "end_time": "  "
-#     }
-# g._generetor(['test',2026])
-# g._addEvents(3,3,0,event_1)
-# g._addEventWeekday(6,event_2)
-# g._addEventWeekday(0,event_2)
-# for x in range(0,1002):
-#     g._addEvents(1,1,0,event=event_2["event_name"]+f'{x}')
-#     print('test')
-# g._seve('data/dataTEST.json')

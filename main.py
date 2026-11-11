@@ -1,7 +1,7 @@
 
 import flet as ft
 
-from ui.create_calendar import CreateCalendarStart, CreateCalendarDayToDay
+from ui.create_calendar import CreateCalendarStart, CreateOrEditCalendar
 from ui.my_calendar import MyCalendar
 from ui.open_calendar import OpenCalendar
 from ui.home import Home
@@ -9,7 +9,7 @@ from api.tools import Tools
 from api.cache import Cache
 from ui.import_export import Import, Export, ChoiceCalendar
 from ui.setting import SettingPage
-
+from ui.status_page import Aplay
 async def main(page: ft.Page):
     page.title = "calend tool"
     Tools().StartApp()
@@ -23,13 +23,14 @@ async def main(page: ft.Page):
     routes = {
         '/home': lambda: Home(cache,inform),
         '/create_colendar_start': lambda: CreateCalendarStart(cache,inform),
-        '/create_colendar_day_to_day': lambda: CreateCalendarDayToDay(cache,inform),
+        '/create_colendar_and_edit': lambda: CreateOrEditCalendar(cache,inform),
         '/setting': lambda: SettingPage(cache,inform),
         '/open': lambda: OpenCalendar(cache,inform),
         '/my_calendar': lambda: MyCalendar(cache,inform),
         '/import': lambda: Import(cache,inform),
         '/export': lambda: Export(cache,inform),
-        '/choice_calendar': lambda: ChoiceCalendar(cache,inform)
+        '/choice_calendar': lambda: ChoiceCalendar(cache,inform),
+        '/aplay':lambda: Aplay(cache,inform)
     }
     
 

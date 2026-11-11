@@ -2,28 +2,31 @@ import flet as ft
 import typing
 import logging
 from api.tools import Tools
-from api.backend import today
+from api.calendarcore import today
 
 
 class CastomTopBar(ft.Row):
-    def __init__(self,inf):
+    def __init__(self,cache,inf):
         super().__init__()
+        self.cache = cache
         self.inf = inf
         self.lg = logging.getLogger(f"{__name__}.CreateTopBar")
         self.lg.info("INIT")
+        self.topbar_name = ''
         self.alignment = ft.MainAxisAlignment.SPACE_BETWEEN
     def Render(
             self,
-            today: list[int] = today(),
-            name: str = None              
+            today: list[int] = today(),             
             ):
+        if self.cache._export('topbar_name')!=None:
+            self.topbar_name = f"Нaзвание: {self.cache._export('topbar_name')}"        
         self.t = today
         self.controls = [
             ft.Row([
             CastomButton(text="Назад", padding=5,size = 15,on_click=self._exit),
-            ft.Text(f"Нaзвание:  {name}",size=20,weight=ft.FontWeight.BOLD)
+            ft.Text(self.topbar_name,size=20,weight=ft.FontWeight.BOLD)
             ]),
-            ft.Text(f"Дата:  {self.t[2]}:{self.t[1]}:{self.t[0]}",size=15)
+            ft.Text(f"Сегодня:  {self.t[2]}:{self.t[1]}:{self.t[0]}",weight=ft.FontWeight.BOLD,size=15)
         ]
     async def _exit(self):
         await self.inf("/home")
@@ -136,5 +139,4 @@ class CastomColorExplanation(ft.Column):
         self.Render(events)
         self.update()
 
-
-
+ 

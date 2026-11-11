@@ -1,6 +1,6 @@
 import flet as ft
 from ui.render_list_calendar import CreateCalendarList,CreateNullCalendar
-from api.backend import Generator
+from api.calendarcore import Generator
 from ui.style import CastomButton, CastomLanDay,CastomColorExplanation
 import logging
 from api.tools import Tools
@@ -10,7 +10,7 @@ class Home(ft.Container):
         self.lg.info("START INIT HOME")
         self.inf = inform
         super().__init__()
-
+        self.cache = cache
         self.castomdayevent = CastomLanDay()
         self.castomcolors = CastomColorExplanation()
         def reqvest(control):
@@ -21,7 +21,8 @@ class Home(ft.Container):
         love_calendar = Tools().love_calendar()
         if love_calendar!=None:
             calendar = Generator()._open(love_calendar)
-            create_list_calendar = CreateCalendarList(calendar,reqvest)   
+            self.cache._add_value("is_read",True)
+            create_list_calendar = CreateCalendarList(self.cache,calendar,reqvest,True)   
         else:
             create_list_calendar = CreateNullCalendar()
         self.home_calendar = ft.Container(content=ft.Row([ft.Container(self.castomdayevent),self.castomcolors,create_list_calendar]),expand=True)

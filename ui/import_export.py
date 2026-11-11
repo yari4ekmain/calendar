@@ -1,9 +1,11 @@
 import flet as ft
 from api.tools import Tools
 import logging as lg
+from api.formatcore import json_to_ics
+from api.calendarcore import Generator
 from ui.style import CastomButton
 
-LEN_FORMAT = [".JSON",".IMG",".CSV",".HTML",".XLSX"]
+LEN_FORMAT = [".ICS",".JSON",".IMG",".CSV",".HTML",".XLSX"]
 class Import(ft.Container):
     def __init__(self,cache,inform):
         super().__init__()
@@ -14,13 +16,26 @@ class Import(ft.Container):
 class Export(ft.Container):
     def __init__(self,cache,inform):
         super().__init__()
+        self.cache =cache
+        self.inform = inform
         labal = ft.Text("Выберите формат")
         self.format_exp_row = ft.Row([CastomButton(x,on_click=self._valid,data =x) for x in LEN_FORMAT],alignment=ft.MainAxisAlignment.CENTER)
         self.exit = CastomButton("Назад",expand=True)
-        self.column = ft.Column([labal,self.format_exp_row,self.exit])
+        self.info_text = ft.Text('')
+        self.column = ft.Column([labal,self.format_exp_row,self.info_text,self.exit])
         self.content= self.column
-    def _valid(self,e):
-        None
+    async def _valid(self,e):
+        if e.control.data != '.ICS':
+            self.info_text.value =  "Извените только формат .ics"
+        else:
+            self.file_name = str(self.cache._export("export")).split('/')[-1].replace('json','ics')
+            self.save_path = await ft.FilePicker().save_file(file_name=self.file_name)
+            self.calendar = Generator()._open(self.cache._export("export"))
+            if json_to_ics(self.calendar,self.save_path.replace('.ics','')):
+                self.cache._add_value('aplay_info',f'Фаил {self.file_name} успешно сохранён')
+                await self.inform('/aplay')
+            
+
 
 class ChoiceCalendar(ft.Container):
     def __init__(self, cache,inform):

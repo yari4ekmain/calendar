@@ -1,6 +1,6 @@
 import flet as ft
 from ui.render_list_calendar import CreateCalendarList
-from api.backend import Generator, today
+from api.calendarcore import Generator, today
 from ui.style import CastomLanDay,CastomColorExplanation, CastomTopBar
 import logging
 
@@ -20,7 +20,7 @@ class OpenCalendar(ft.Container):
         self.today = today()
         self.castomdayevent = CastomLanDay()
         self.castomcolors = CastomColorExplanation()    
-        self.topbar = CastomTopBar(self.inf)   
+        self.topbar = CastomTopBar(self.cache,self.inf)   
         if self.calendar["old"]==self.today[0]:
             day = self.today[2]
             mes =self.today[1]
@@ -29,9 +29,11 @@ class OpenCalendar(ft.Container):
         events = self.generator._getEvent(mes,day)
         self.castomcolors.Render(events)
         self.castomdayevent.Render(events)
-        self.topbar.Render(self.today,name=self.calendar["name"])
-        self.home_calendar = ft.Container(content=ft.Row([ft.Container(self.castomdayevent),self.castomcolors,CreateCalendarList(self.calendar,self.reqvest)]),expand=True)
-        
+        self.cache._add_value("topbar_name",self.calendar["name"])
+        self.topbar.Render(self.today)
+        self.cache._add_value("is_read",True)
+        self.home_calendar = ft.Container(content=ft.Row([ft.Container(self.castomdayevent),self.castomcolors,CreateCalendarList(self.cache,self.calendar,self.reqvest)]),expand=True)
+
         self.content = ft.Column([self.topbar,self.home_calendar],expand=True)
         self.lg.info('INIT OpenCalendar')
 
