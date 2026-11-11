@@ -105,7 +105,7 @@ class Generator():
             for day in self.data[f"{mes}"]:
                 if len(day['events'])>0:
                     for event_in_day in day["events"]:
-                        if event["uuid"]==uuid:
+                        if event_in_day["uuid"]==uuid:
                             (day["events"]).remove(event_in_day)
         return self.data
 

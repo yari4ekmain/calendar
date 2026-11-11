@@ -337,6 +337,10 @@ class CreateEvent(ft.Container):
                 data.border_color = "#690000"
                 self.lg.warning(f"CreateEvent VOLID TUPEERROR {e}")
                 return True
+            except ValueError as e:
+                data.border_color = "#690000"
+                self.lg.warning(f"CreateEvent VOLID VALUEERROR {e}")
+                return True
 
         flag = True
         if self.label_event.value =='':

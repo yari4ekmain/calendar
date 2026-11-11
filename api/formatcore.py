@@ -101,7 +101,7 @@ def json_to_ics(
                         )
                 
                 else:
-                    date_start = date_ics_sgvig_in_work(calendar['old'])
+                    date_start = str(event['type_and_data'][0]).replace('-','')
                     date_time = date_time_in_ics(event,date_start)
                     f.write(
                         f'''BEGIN:VEVENT
